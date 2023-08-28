@@ -747,19 +747,15 @@ img {
     text-decoration: none;
 }
 
-.team_box ul li a.fa-twitter:hover {
+.team_box ul li a.fa-university:hover {
     color: #55acee;
 }
 
-.team_box ul li a.fa-facebook:hover {
+.team_box ul li a.fa-linkedin:hover {
     color: #3b5998;
 }
 
-.team_box ul li a.fa-pinterest:hover {
-    color: #cb2026;
-}
-
-.team_box ul li a.fa-google-plus:hover {
+.team_box ul li a.fa-google:hover {
     color: #dd4b39;
 }
  
