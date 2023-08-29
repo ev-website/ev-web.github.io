@@ -17,6 +17,42 @@ $(document).ready(function() {
         return false
 
     });
+
+// Added for form	
+function submitForm() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Use fetch or another AJAX method to send data to Google Sheets API
+  const apiKey = "YOUR_GOOGLE_API_KEY";
+  const spreadsheetId = "YOUR_SPREADSHEET_ID";
+
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1?key=${apiKey}`;
+
+  const data = {
+    values: [[name, email, message]]
+  };
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => {
+    if (response.status === 200) {
+      alert("Form submitted successfully!");
+    } else {
+      alert("Form submission failed.");
+    }
+  })
+  .catch(error => {
+    alert("An error occurred.");
+    console.error(error);
+  });
+}
 	
     function resizeText() {
         var preferredWidth = 767;
