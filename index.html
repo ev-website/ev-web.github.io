@@ -7,7 +7,8 @@
 <link rel="icon" href="favicon.png" type="image/png">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="https://fonts.googleapis.com/css?family=Raleway:800,700,400" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Signika:400,600" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
  
 <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
   function init() {
     // Initialize without using OAuth (using app passcode)
     gapi.client.init({
-      apiKey: "gkkgnkczxklssssj",
+      apiKey: "gkkgnkczxklssssj",  // Make sure this is your actual app passcode
       discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
     }).then(function() {
       // API is ready for use
@@ -58,7 +59,7 @@
       alert("Error submitting form.");
     });
   }
-</script> 
+</script>
 </head>
 <body>
 
@@ -597,7 +598,7 @@
   		<input class="input-text" type="text" id="name" value="Your Name *">
   		<input class="input-text" type="email" id="email" value="Your E-mail *">
   		<textarea class="input-text text-area" id="message" cols="0" rows="0">Your Message *</textarea>
-  		<input class="input-btn" type="button" value="send message" onclick="submitForm()">
+  		<input class="input-btn" id="submitBtn" type="button" value="Send Message" onclick="submitForm()" disabled>
 	</div>
 
         </div><br/><br/>
