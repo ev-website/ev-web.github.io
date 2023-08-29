@@ -15,7 +15,50 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/html5element.js"></script>
 <![endif]-->
- 
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+  // Load the API library
+  gapi.load("client", init);
+
+  function init() {
+    // Initialize without using OAuth (using app passcode)
+    gapi.client.init({
+      apiKey: "gkkgnkczxklssssj",
+      discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+    }).then(function() {
+      // API is ready for use
+      console.log("Google Sheets API initialized");
+    });
+  }
+
+  function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Google Sheet ID and range (replace with your values)
+    var spreadsheetId = "1FyhArdBEweJMyD81r8SJN-4bt4UItIB78iloh_XYOEc";
+    var range = "Sheet1!A1:C1";
+
+    // Values to be submitted
+    var values = [[name, email, message]];
+
+    // Call the Sheets API to append the data
+    gapi.client.sheets.spreadsheets.values.append({
+      spreadsheetId: spreadsheetId,
+      range: range,
+      valueInputOption: "RAW",
+      insertDataOption: "INSERT_ROWS",
+      values: values,
+    }).then(function(response) {
+      console.log("Data appended successfully");
+      alert("Form submitted!");
+    }, function(reason) {
+      console.error("Error:", reason.result.error.message);
+      alert("Error submitting form.");
+    });
+  }
+</script> 
 </head>
 <body>
 
@@ -551,11 +594,11 @@
         <div class="col-lg-12 wow fadeInLeft delay-06s">
 <!-- Added for Form -->
         <div class="form">
-  <input class="input-text" type="text" id="name" value="Your Name *">
-  <input class="input-text" type="email" id="email" value="Your E-mail *">
-  <textarea class="input-text text-area" id="message" cols="0" rows="0">Your Message *</textarea>
-  <input class="input-btn" type="button" value="send message" onclick="submitForm()">
-</div>
+  		<input class="input-text" type="text" id="name" value="Your Name *">
+  		<input class="input-text" type="email" id="email" value="Your E-mail *">
+  		<textarea class="input-text text-area" id="message" cols="0" rows="0">Your Message *</textarea>
+  		<input class="input-btn" type="button" value="send message" onclick="submitForm()">
+	</div>
 
         </div><br/><br/>
 	<figure>
