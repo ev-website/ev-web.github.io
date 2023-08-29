@@ -25,8 +25,8 @@ function submitForm() {
   const message = document.getElementById("message").value;
 
   // Use fetch or another AJAX method to send data to Google Sheets API
-  const apiKey = "YOUR_GOOGLE_API_KEY";
-  const spreadsheetId = "YOUR_SPREADSHEET_ID";
+  const apiKey = "AIzaSyAptAZfLwrz6TrmrwSjQsLF4ToriQ4HamQ";
+  const spreadsheetId = "1FyhArdBEweJMyD81r8SJN-4bt4UItIB78iloh_XYOEc";
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1?key=${apiKey}`;
 
