@@ -342,7 +342,12 @@ a.read_more2:hover {
     top: 20px;
     z-index: 20;
 }
-
+.service_icon span {
+    background: transparent;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 .service_block h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
