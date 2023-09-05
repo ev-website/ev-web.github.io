@@ -330,11 +330,12 @@ a.read_more2:hover {
     border: 2px solid #df0031;
 }
 
-
+.service_icon.icon3 {
+    border: 2px solid #df0031;
+}
 
 .service_icon span {
     background: transparent;
-    border-radius: 50%;
     display: block;
     height: 100%;
     width: 100%;
