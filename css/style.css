@@ -1171,6 +1171,14 @@ img {
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
 }
+.team_box:hover .item_overlay {
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
 
 .item_overlay {
     width: 100%;
