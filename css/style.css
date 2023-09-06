@@ -289,7 +289,22 @@ a.read_more2:hover {
     border: 1px solid #fff;
 }
 
-	
+.carousel-indicators li {
+        width: 20px; /* Set the width of the rectangle */
+        height: 5px; /* Set the height of the rectangle */
+        margin: 0 3px; /* Adjust spacing between rectangles */
+        background-color: #ccc; /* Set the background color of inactive rectangles */
+        border: none; /* Remove border */
+        opacity: 0.5; /* Set opacity for inactive indicators */
+        transition: opacity 0.2s; /* Add a smooth transition effect for opacity */
+    }
+
+    /* Style the active indicator differently */
+    .carousel-indicators .active {
+        width: 30px; /* Set the width of the active rectangle */
+        background-color: #333; /* Set the background color of the active rectangle */
+        opacity: 1; /* Set full opacity for the active indicator */
+    }	
 
 
 
