@@ -101,6 +101,9 @@ p {
 #aboutUs, #research, #dataset, #team, #industry, #contact {
     padding-top: 20px; /* Adjust the value as needed */
 }
+aboutUs {
+  scroll-margin-top: 100px; /* Adjust this value as needed */
+}
 
 /* Header Styles
 ---------------------------------*/
