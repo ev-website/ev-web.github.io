@@ -48,7 +48,9 @@ a, a:hover, a:active {
     clear: both;
 }
 
-
+.black-bar a:hover {
+            color: red;
+        }
 /* Styles
 ---------------------------------*/
 body {
