@@ -321,7 +321,7 @@ a.read_more2:hover {
     }	
 
 
-.carousel-caption {
+.carousel-caption.h3 {
 	top: 50%;
 transform: translateY(-50%);
 	bottom: initial;
