@@ -51,10 +51,11 @@ a, a:hover, a:active {
 .black-bar a:hover {
             color: red;
         }
-.mainNav navbar-center {
-            display: flex;
-            justify-content: center;
-        }
+.mainNav.navbar-center {
+    display: flex;
+    justify-content: center;
+}
+
 /* Styles
 ---------------------------------*/
 body {
