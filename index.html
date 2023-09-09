@@ -68,7 +68,7 @@
 			
 <div id="main-nav" class="collapse navbar-collapse navStyle text-center">
     <ul class="nav navbar-nav navbar-center" id="mainNav" style="text-align: center; display: flex; justify-content: center; width: 100%;">
-        <li class="active"><a href="#carousel-example-generic" class="scroll-link">Home</a></li>
+        <li class="active" style="padding-left: 10%;"><a href="#carousel-example-generic" class="scroll-link">Home</a></li>
         <li><a href="#aboutUs" class="scroll-link">About</a></li>
         <li><a href="#research" class="scroll-link">Research Areas</a></li>
         <li><a href="#dataset" class="scroll-link">Datasets</a></li>
@@ -561,10 +561,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.ok) {
           // Form submission was successful
           popupMessage.innerHTML = "Form submitted successfully!";
+          popupMessage.style.display = "block"; // Display the pop-up message
           popupMessage.classList.add("success"); // Add a CSS class for styling
         } else {
           // Form submission had an error
           popupMessage.innerHTML = "Error submitting the form. Please try again later.";
+          popupMessage.style.display = "block"; // Display the pop-up message
           popupMessage.classList.add("error"); // Add a CSS class for styling
         }
       })
@@ -572,16 +574,31 @@ document.addEventListener("DOMContentLoaded", function () {
         // Handle any network errors here
         console.error("Network error:", error);
         popupMessage.innerHTML = "An error occurred. Please try again later.";
+        popupMessage.style.display = "block"; // Display the pop-up message
         popupMessage.classList.add("error"); // Add a CSS class for styling
       });
 
     // Reset the form after submission
     setTimeout(function () {
       form.reset();
-    }, 50); // Delay for 500 milliseconds (adjust as needed)
+      popupMessage.style.display = "none"; // Hide the pop-up message
+    }, 5000); // Delay for 5 seconds (adjust as needed)
   });
 });
 </script>
+
+<style>
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+}
+</style>
+
 
 <style>
 .success {
