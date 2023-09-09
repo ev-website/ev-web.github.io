@@ -505,13 +505,16 @@
 
 <script>
 function resetForm() {
-  document.getElementById("name").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("message").value = "";
-  // Add more lines to reset other form fields if needed
+  setTimeout(function() {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    // Add more lines to reset other form fields if needed
+  }, 500); // Delay for 500 milliseconds (adjust as needed)
   return true; // Returning true to allow the form submission to continue
 }
 </script>
+
 
 
 
