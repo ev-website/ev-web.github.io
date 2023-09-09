@@ -485,25 +485,33 @@
     <div class="contact_section">
       <h2>Contact Us</h2>
 
-<form action="https://njit.us11.list-manage.com/subscribe/post?u=82d5f74857c44a380887360a0&amp;id=5b5d81f023&amp;f_id=00c6a0e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
-        <div id="mc_embed_signup_scroll">
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">Name <span class="asterisk">*</span></label><input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Message </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div>
-        <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-        <input type="text" name="b_82d5f74857c44a380887360a0_5b5d81f023" tabindex="-1" value="">
-    </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                </div>
-        </div>
-    </div>
+<form action="https://formspree.io/f/mbjvyvrd" method="POST" onsubmit="return clearForm()">
+  <label>
+    Name:
+    <input type="text" name="name" style="width: 100%;" placeholder="Enter your name">
+  </label>
+  <label>
+    Email:
+    <input type="email" name="email" style="width: 100%;" placeholder="Enter your Email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" style="width: 100%;" placeholder="Enter your Message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
+
+<script>
+function clearForm() {
+  // You can add more fields here if needed
+  document.querySelector('input[name="name"]').value = '';
+  document.querySelector('input[name="email"]').value = '';
+  document.querySelector('textarea[name="message"]').value = '';
+  return true; // Allow the form submission to continue
+}
+</script>
+
 
 <!--	    
     <div class="center-form">
