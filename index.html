@@ -485,7 +485,8 @@
     <div class="contact_section">
       <h2>Contact Us</h2>
 
-<form action="https://formspree.io/f/mbjvyvrd" method="POST">
+	    
+<form action="https://formspree.io/f/mbjvyvrd" method="POST" onsubmit="return resetForm()">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your name" style="width: 100%;">
@@ -501,6 +502,17 @@
   <!-- your other form fields go here -->
   <button type="submit" class="btn btn-primary" style="width: 200px;">Submit</button>
 </form>
+
+<script>
+function resetForm() {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+  // Add more lines to reset other form fields if needed
+  return true; // Returning true to allow the form submission to continue
+}
+</script>
+
 
 
 
