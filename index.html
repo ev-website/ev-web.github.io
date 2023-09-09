@@ -485,29 +485,29 @@
     <div class="contact_section">
       <h2>Contact Us</h2>
 
+    <div class="center-form">
+        <div class="col-lg-8">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required style="width: 1100px;" placeholder="Enter your name">
+                </div>
 
-<form
-  action="https://formspree.io/f/mbjvyvrd"
-  method="POST"
->
-  <label>
-    Email
-    <input type="text" name="name" required placeholder="Enter your Name" style="width: 100%;">
-  </label>
-  <label>
-    Email
-    <input type="email" name="email" required placeholder="Enter your Email" style="width: 100%;">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message" rows="4" placeholder="Enter your Message" style="width: 100%;"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit" style="width: 200px;>Send</button>
-</form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required style="width: 1100px;" placeholder="Enter your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required style="width: 1100px;" placeholder="Enter your Message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" required style="width: 200px;">Submit</button>
+            </form>
+        </div>
+    </div>
 	    
-
-        <div class="row">
+	<div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12">
             <div class="contact_info">
               <h4 class="contact-info-title" style="padding-top: 25px;">Funding Agency</h4>
