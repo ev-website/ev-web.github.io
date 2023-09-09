@@ -20,9 +20,32 @@
 </head>
 
 <body>
- <div style="background-color: black; color: white; padding: 10px 0;">
-    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" style="text-decoration: none; color: white; font-size: x-small;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a>
+<style>
+  @keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .moving-text {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    animation: moveText 4s linear infinite;
+  }
+</style>
+
+<div class="moving-text">
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" style="text-decoration: none; color: white; font-size: x-small;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a>
 </div>
+	
 <!--Header_section-->
 <header id="header_wrapper">
     <div class="container">
