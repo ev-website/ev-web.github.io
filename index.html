@@ -562,18 +562,18 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.ok) {
           // Form submission was successful
-          messageContainer.innerHTML = "Form submitted successfully!";
+          messageContainer.innerHTML = "Details submitted successfully. We will be in touch soon!";
           messageContainer.classList.add("success"); // Add a CSS class for styling
         } else {
           // Form submission had an error
-          messageContainer.innerHTML = "Form submitted successfully!";
+          messageContainer.innerHTML = "Details submitted successfully. We will be in touch soon!";
           messageContainer.classList.add("success"); // Add a CSS class for styling
         }
       })
       .catch((error) => {
         // Handle any network errors here
         console.error("Network error:", error);
-        messageContainer.innerHTML = "Form submitted successfully!";
+        messageContainer.innerHTML = "Details submitted successfully. We will be in touch soon!";
         messageContainer.classList.add("success"); // Add a CSS class for styling
       });
 
@@ -584,7 +584,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         messageContainer.innerHTML = "";
         messageContainer.classList.remove("success", "error");
-      }, 50); // Delay for 5 seconds (adjust as needed)
+      }, 5); // Delay for 5 seconds (adjust as needed)
     }, 5); // Delay for 500 milliseconds (adjust as needed)
   });
 });
@@ -624,7 +624,10 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div> -->
 	    
-	<div class="row">
+  <div class="container">
+    <div class="footer_bottom"><span>Copyright © 2023 Ev Website. </span> </div>
+  </div>
+<div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12">
             <div class="contact_info">
               <h4 class="contact-info-title" style="padding-top: 25px;">Funding Agency</h4>
@@ -645,9 +648,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     </section>
-  </div>
-  <div class="container">
-    <div class="footer_bottom"><span>Copyright © 2023 Ev Website. </span> </div>
   </div>
 </footer>
 
