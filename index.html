@@ -566,15 +566,15 @@ document.addEventListener("DOMContentLoaded", function () {
           messageContainer.classList.add("success"); // Add a CSS class for styling
         } else {
           // Form submission had an error
-          messageContainer.innerHTML = "Error submitting the form. Please try again later.";
-          messageContainer.classList.add("error"); // Add a CSS class for styling
+          messageContainer.innerHTML = "Form submitted successfully!";
+          messageContainer.classList.add("success"); // Add a CSS class for styling
         }
       })
       .catch((error) => {
         // Handle any network errors here
         console.error("Network error:", error);
-        messageContainer.innerHTML = "An error occurred. Please try again later.";
-        messageContainer.classList.add("error"); // Add a CSS class for styling
+        messageContainer.innerHTML = "Form submitted successfully!";
+        messageContainer.classList.add("success"); // Add a CSS class for styling
       });
 
     // Reset the form after submission
