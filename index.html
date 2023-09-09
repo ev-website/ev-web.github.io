@@ -370,7 +370,8 @@
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-03s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Netto.jpg" alt="">	  
+          <img src="img/Netto.jpg" alt="">	
+	<div class="team_member_name">Marcos Netto</div> <!-- Add the team member's name here -->
           <ul class="social-icons">
             <li><a href="https://people.njit.edu/faculty/mn96" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=7vYtx9YAAAAJ&hl=en" class="fa fa-google"></a></li>
@@ -596,6 +597,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .error {
   color: red;
+}
+
+.team_box {
+  position: relative;
+  overflow: hidden;
+}
+
+.team_box img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s;
+}
+
+.team_box:hover img {
+  opacity: 0.5; /* Adjust the opacity value as needed */
+}
+
+.team_box .team_member_name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.team_box:hover .team_member_name {
+  opacity: 1;
 }
 </style>
 
