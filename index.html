@@ -18,18 +18,13 @@
     <![endif]-->
 
 </head>
-
-<body>
 <style>
-  @keyframes moveText {
+  @keyframes scrollText {
     0% {
-      transform: translateX(0);
-    }
-    50% {
       transform: translateX(100%);
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(-100%);
     }
   }
 
@@ -38,14 +33,15 @@
     color: white;
     padding: 10px 0;
     text-align: center;
-    display: inline-block;
-    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .moving-text {
     font-size: x-small;
     text-decoration: none;
-    animation: moveText 8s linear infinite;
+    animation: scrollText 15s linear infinite;
+    display: inline-block;
   }
 
   .moving-text:hover {
