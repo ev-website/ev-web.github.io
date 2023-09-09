@@ -519,7 +519,7 @@
       <h2>Contact Us</h2>
 
 	    
-<form action="https://formspree.io/f/mbjvyvrd" method="POST" onsubmit="return resetForm()">
+<form id="myForm" action="https://formspree.io/f/mbjvyvrd" method="POST">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your name" style="width: 100%;">
@@ -536,17 +536,64 @@
   <button type="submit" class="btn btn-primary" style="width: 200px;">Submit</button>
 </form>
 
+<div id="popup-message" style="display: none;"></div>
+
 <script>
-function resetForm() {
-  setTimeout(function() {
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-    // Add more lines to reset other form fields if needed
-  }, 5); // Delay for 500 milliseconds (adjust as needed)
-  return true; // Returning true to allow the form submission to continue
-}
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the form element
+  const form = document.getElementById("myForm");
+
+  // Get the popup message div
+  const popupMessage = document.getElementById("popup-message");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Get the form data
+    const formData = new FormData(form);
+
+    // Send a POST request to Formspree
+    fetch("https://formspree.io/f/mbjvyvrd", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Form submission was successful
+          popupMessage.innerHTML = "Form submitted successfully!";
+          popupMessage.classList.add("success"); // Add a CSS class for styling
+        } else {
+          // Form submission had an error
+          popupMessage.innerHTML = "Error submitting the form. Please try again later.";
+          popupMessage.classList.add("error"); // Add a CSS class for styling
+        }
+      })
+      .catch((error) => {
+        // Handle any network errors here
+        console.error("Network error:", error);
+        popupMessage.innerHTML = "An error occurred. Please try again later.";
+        popupMessage.classList.add("error"); // Add a CSS class for styling
+      });
+
+    // Reset the form after submission
+    setTimeout(function () {
+      form.reset();
+    }, 5); // Delay for 500 milliseconds (adjust as needed)
+  });
+});
 </script>
+
+<style>
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+}
+</style>
 
 
 <!--	    
