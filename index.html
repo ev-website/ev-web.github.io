@@ -485,7 +485,7 @@
     <div class="contact_section">
       <h2>Contact Us</h2>
 
-<form action="https://formspree.io/f/mbjvyvrd" method="POST" onsubmit="return clearForm()">
+<form id="myForm" onsubmit="submitForm(event)">
   <label>
     Name:
     <input type="text" name="name" style="width: 100%;" placeholder="Enter your name">
@@ -501,6 +501,51 @@
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
+
+<script>
+function submitForm(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  const form = document.getElementById('myForm');
+  const formData = new FormData(form);
+
+  fetch('https://formspree.io/f/mbjvyvrd', {
+    method: 'POST',
+    body: formData,
+  })
+  .then(response => {
+    if (response.ok) {
+      // Form submission was successful
+      clearForm();
+      displaySuccessMessage();
+    } else {
+      // Form submission failed
+      displayErrorMessage();
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    displayErrorMessage();
+  });
+}
+
+function clearForm() {
+  document.querySelector('input[name="name"]').value = '';
+  document.querySelector('input[name="email"]').value = '';
+  document.querySelector('textarea[name="message"]').value = '';
+}
+
+function displaySuccessMessage() {
+  // You can replace this with your desired way of displaying a success message (e.g., a popup modal)
+  alert('Form submitted successfully!');
+}
+
+function displayErrorMessage() {
+  // You can replace this with your desired way of displaying an error message (e.g., a popup modal)
+  alert('Form submission failed. Please try again later.');
+}
+</script>
+
 
 
 
