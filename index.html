@@ -372,6 +372,7 @@
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Netto.jpg" alt="">	
 	<div class="team_member_name">Marcos Netto</div> <!-- Add the team member's name here -->
+	<div class="team_member_description">Dynamics</div> <!-- Team member's description (lower font) -->
           <ul class="social-icons">
             <li><a href="https://people.njit.edu/faculty/mn96" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=7vYtx9YAAAAJ&hl=en" class="fa fa-google"></a></li>
@@ -388,6 +389,7 @@
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Li.jpg" alt="">
 	<div class="team_member_name">Na Li</div> <!-- Add the team member's name here -->
+	<div class="team_member_description">Control</div> <!-- Team member's description (lower font) -->
           <ul class="social-icons">
             <li><a href="https://seas.harvard.edu/person/na-li" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=qdGelXoAAAAJ&hl=en&oi=ao"class="fa fa-google"></a></li>
@@ -404,6 +406,7 @@
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Zhao.jpg" alt="">
 	<div class="team_member_name">Junbo Zhao</div> <!-- Add the team member's name here -->
+	<div class="team_member_description">State Estimation</div> <!-- Team member's description (lower font) -->
           <ul class="social-icons">
             <li><a href="https://www.ee.uconn.edu/junbo-zhao" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=5HpDLaYAAAAJ&hl=en&oi=ao" class="fa fa-google"></a></li>
@@ -422,6 +425,7 @@
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Pong.png" alt="">
 	<div class="team_member_name">Philip Pong</div> <!-- Add the team member's name here -->
+	<div class="team_member_description">Sensors</div> <!-- Team member's description (lower font) -->
           <ul class="social-icons">
             <li><a href="https://people.njit.edu/faculty/wp24" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=s9zr4jsAAAAJ&hl=en&oi=ao" class="fa fa-google"></a></li>
@@ -438,6 +442,7 @@
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Chen.jpg" alt="">
 	<div class="team_member_name">Minjie Chen</div> <!-- Add the team member's name here -->
+	<div class="team_member_description">Power Electronic</div> <!-- Team member's description (lower font) -->
           <ul class="social-icons">
             <li><a href="https://ece.princeton.edu/people/minjie-chen" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=ECMrftkAAAAJ&hl=en" class="fa fa-google"></a></li>
@@ -454,6 +459,7 @@
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Lin.jpg" alt="">
 	<div class="team_member_name">Guang Lin</div> <!-- Add the team member's name here -->
+	<div class="team_member_description">Machine Learning</div> <!-- Team member's description (lower font) -->
           <ul class="social-icons">
             <li><a href="https://engineering.purdue.edu/ME/People/ptProfile?resource_id=117602" class="fa fa-university"></a></li>
             <li><a href="https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en" class="fa fa-google"></a></li>
@@ -616,28 +622,46 @@ document.addEventListener("DOMContentLoaded", function () {
   max-width: 100%;
   height: 100%;
   transition: opacity 0.5s;
-  border-radius: 0; /* Add this line to prevent rounding */
 }
 
 .team_box:hover img {
   opacity: 0.5; /* Adjust the opacity value as needed */
 }
 
+/* Your existing CSS rules */
+
+/* CSS for the team member's name and description */
 .team_box .team_member_name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
-  color: #fff; /* Text color */
-  padding: 10px 20px;
-  opacity: 0;
-  transition: opacity 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 24px; /* Adjust font size for the name */
 }
 
-.team_box:hover .team_member_name {
-  opacity: 1;
+.team_box .team_member_description {
+    position: absolute;
+    top: 70%; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+    color: #fff; /* Text color */
+    padding: 5px 15px; /* Adjust padding as needed */
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 18px; /* Adjust font size for the description (smaller) */
+}
+
+.team_box:hover .team_member_name,
+.team_box:hover .team_member_description {
+    opacity: 1;
 }
 </style>
 
