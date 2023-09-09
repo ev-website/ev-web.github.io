@@ -480,21 +480,24 @@
 <footer class="footer_wrapper" id="contact">
   <!-- Existing Form HTML -->
 
-<form
-  action="https://formspree.io/f/mbjvyvrd"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+<form action="https://formspree.io/f/mbjvyvrd" method="POST">
+<h2>Contact Us</h2>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your name" required style="width: 1100px;">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your Email" required style="width: 1100px;">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your Message" required style="width: 1100px;"></textarea>
+  </div>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <button type="submit" class="btn btn-primary" style="width: 200px;">Submit</button>
 </form>
+
 
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12">
