@@ -67,7 +67,7 @@
                     </button>
 			
 <div id="main-nav" class="collapse navbar-collapse navStyle text-center">
-    <ul class="nav navbar-nav navbar-center" id="mainNav" style="text-align: center; display: flex; justify-content: center; width: 130%;">
+    <ul class="nav navbar-nav navbar-center" id="mainNav" style="text-align: center; display: flex; justify-content: center; width: 122%;">
 	<li class="active"><a href="#carousel-example-generic" class="scroll-link">Home</a></li>
         <li><a href="#aboutUs" class="scroll-link">About</a></li>
         <li><a href="#research" class="scroll-link">Research Areas</a></li>
@@ -536,7 +536,7 @@
   <button type="submit" class="btn btn-primary" style="width: 200px;">Submit</button>
 </form>
 
-<div id="popup-message"></div>
+<div id="popup-message" style="display: none;"></div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -558,49 +558,36 @@ document.addEventListener("DOMContentLoaded", function () {
       body: formData,
     })
       .then((response) => {
-        // Log the response for debugging
-        console.log("Response status:", response.status);
-        console.log("Response text:", response.statusText);
-
-        if (response.ok) {
-          // Form submission was successful
-          popupMessage.innerHTML = "Form submitted successfully!";
-          popupMessage.classList.add("success"); // Add a CSS class for styling
-          popupMessage.style.display = "block"; // Show the pop-up message
-        } else {
-          // Form submission had an error
-          popupMessage.innerHTML = "Error submitting the form. Please try again later.";
-          popupMessage.classList.add("error"); // Add a CSS class for styling
-          popupMessage.style.display = "block"; // Show the pop-up message
-        }
-      })
+  if (response.ok) {
+    // Form submission was successful
+    popupMessage.innerHTML = "Form submitted successfully!";
+    popupMessage.style.display = 'block'; // Make the popup visible
+    popupMessage.classList.remove("error"); // Remove any previous error class
+    popupMessage.classList.add("success"); // Add a CSS class for styling
+  } else {
+    // Form submission had an error
+    popupMessage.innerHTML = "Error submitting the form. Please try again later.";
+    popupMessage.style.display = 'block'; // Make the popup visible
+    popupMessage.classList.remove("success"); // Remove any previous success class
+    popupMessage.classList.add("error"); // Add a CSS class for styling
+  }
+})
       .catch((error) => {
         // Handle any network errors here
         console.error("Network error:", error);
-        popupMessage.innerHTML = "A network error occurred. Please try again later.";
+        popupMessage.innerHTML = "An error occurred. Please try again later.";
         popupMessage.classList.add("error"); // Add a CSS class for styling
-        popupMessage.style.display = "block"; // Show the pop-up message
       });
 
     // Reset the form after submission
     setTimeout(function () {
       form.reset();
-      popupMessage.style.display = "none"; // Hide the pop-up message after a delay
     }, 500); // Delay for 500 milliseconds (adjust as needed)
   });
 });
 </script>
 
 <style>
-#popup-message {
-  display: none;
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-}
-</style>
 .success {
   background-color: #4caf50;
   color: white;
