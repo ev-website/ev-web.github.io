@@ -67,7 +67,7 @@
                     </button>
 			
 <div id="main-nav" class="collapse navbar-collapse navStyle text-center">
-    <ul class="nav navbar-nav navbar-center" id="mainNav" style="text-align: center; display: flex; justify-content: center; width: 110%;">
+    <ul class="nav navbar-nav navbar-center" id="mainNav" style="text-align: center; display: flex; justify-content: center; width: 130%;">
 	<li class="active"><a href="#carousel-example-generic" class="scroll-link">Home</a></li>
         <li><a href="#aboutUs" class="scroll-link">About</a></li>
         <li><a href="#research" class="scroll-link">Research Areas</a></li>
@@ -558,6 +558,10 @@ document.addEventListener("DOMContentLoaded", function () {
       body: formData,
     })
       .then((response) => {
+        // Log the response for debugging
+        console.log("Response status:", response.status);
+        console.log("Response text:", response.statusText);
+
         if (response.ok) {
           // Form submission was successful
           popupMessage.innerHTML = "Form submitted successfully!";
@@ -573,7 +577,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => {
         // Handle any network errors here
         console.error("Network error:", error);
-        popupMessage.innerHTML = "An error occurred. Please try again later.";
+        popupMessage.innerHTML = "A network error occurred. Please try again later.";
         popupMessage.classList.add("error"); // Add a CSS class for styling
         popupMessage.style.display = "block"; // Show the pop-up message
       });
@@ -597,9 +601,6 @@ document.addEventListener("DOMContentLoaded", function () {
   margin: 10px;
 }
 </style>
-
-
-<style>
 .success {
   background-color: #4caf50;
   color: white;
@@ -610,20 +611,6 @@ document.addEventListener("DOMContentLoaded", function () {
   color: white;
 }
 </style>
-
-
-<style>
-.success {
-  background-color: #4caf50;
-  color: white;
-}
-
-.error {
-  background-color: #f44336;
-  color: white;
-}
-</style>
-
 
 <!--	    
     <div class="center-form">
