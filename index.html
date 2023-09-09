@@ -33,17 +33,28 @@
     }
   }
 
-  .moving-text {
+  .moving-text-container {
     background-color: black;
     color: white;
     padding: 10px 0;
     text-align: center;
-    animation: moveText 4s linear infinite;
+    display: inline-block;
+    position: relative;
+  }
+
+  .moving-text {
+    font-size: x-small;
+    text-decoration: none;
+    animation: moveText 8s linear infinite;
+  }
+
+  .moving-text:hover {
+    animation-play-state: paused;
   }
 </style>
 
-<div class="moving-text">
-  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" style="text-decoration: none; color: white; font-size: x-small;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a>
+<div class="moving-text-container">
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" class="moving-text">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a>
 </div>
 	
 <!--Header_section-->
