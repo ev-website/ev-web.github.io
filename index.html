@@ -316,46 +316,45 @@
     <!--/Portfolio Filters --> 
     
     <!-- Portfolio Wrapper -->
-<div class="portfolio_wrapper">
-    <div class="portfolio-item github">
-        <div class="portfolio_img">
-            <img src="img/github.jpeg" alt="Portfolio 1">
-        </div>
-        <div class="item_overlay">
-            <div class="item_info">
-                <h4 class="project_name">Github Code I</h4>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-item matlab">
-        <div class="portfolio_img">
-            <img src="img/graph.jpg" alt="Portfolio 2">
-        </div>
-        <div class="item_overlay">
-            <div class="item_info">
-                <h4 class="project_name">Matlab Code I</h4>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-item github">
-        <div class="portfolio_img">
-            <img src="img/code.jpeg" alt="Portfolio 3">
-        </div>
-        <div class="item_overlay">
-            <div class="item_info">
-                <h4 class="project_name">Github Code II</h4>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
 
-  <!--/Portfolio Filters -->
-  <div class="portfolio_btm"></div>
-  <div id="project_container">
-    <div class="clear"></div>
-    <div id="project_data"></div>
+  <!-- Portfolio Item 1 - GitHub Code I -->
+  <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 33.33%; opacity: 1;" class="portfolio-item one-third github isotope-item">
+    <div class="portfolio_img">
+        <img src="img/github.jpeg" alt="Portfolio 1">
+    </div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Github Code I</h4>
+        </div>
+    </div>
   </div>
- 
+
+  <!-- Portfolio Item 2 - MATLAB Code I -->
+  <div style="position: absolute; left: 33.33%; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 33.33%; opacity: 1;" class="portfolio-item one-third matlab isotope-item">
+    <div class="portfolio_img">
+        <img src="img/graph.jpg" alt="Portfolio 2">
+    </div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Matlab Code I</h4>
+        </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Item 3 - GitHub Code II -->
+  <div style="position: absolute; left: 66.66%; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 33.33%; opacity: 1;" class="portfolio-item one-third github isotope-item">
+    <div class="portfolio_img">
+        <img src="img/code.jpeg" alt="Portfolio 3">
+    </div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Github Code II</h4>
+        </div>
+    </div>
+  </div>
+
+</div>
   
 </section>
 
@@ -661,7 +660,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Apply a dark gray filter to the image on hover */
 .team_box:hover img {
-  opacity: 0.1; /* Adjust the opacity value as needed */
+  opacity: 0.3; /* Adjust the opacity value as needed */
 }
 
 
