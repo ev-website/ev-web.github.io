@@ -31,14 +31,14 @@
   .moving-text-container {
     background-color: black;
     color: white;
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
   }
 
   .moving-text {
-    font-size: 16px; /* Increase the text size to your desired value */
+    font-size: 10px; /* Increase the text size to your desired value */
     color: white; /* Set text color to white */
     text-decoration: none;
     text-align: left;
@@ -604,39 +604,7 @@ document.addEventListener("DOMContentLoaded", function () {
   transition: opacity 0.8s;
 }
 
-/* CSS for the team member's name and description */
-.team_box .team_member_name {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
-    color: #fff; /* Text color */
-    padding: 10px 20px;
-    opacity: 0;
-    transition: opacity 0.5s;
-    font-size: 18px; /* Adjust font size for the name */
-}
 
-.team_box .team_member_description {
-    position: absolute;
-    top: 55%; /* Adjust the positioning as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
-    color: #fff; /* Text color */
-    padding: 5px 15px; /* Adjust padding as needed */
-    opacity: 0;
-    transition: opacity 0.5s;
-    font-size: 12px; /* Adjust font size for the description (smaller) */
-}
-
-.team_box:hover .team_member_name,
-.team_box:hover .team_member_description {
-    opacity: 1;
-}
 
 /* Apply a dark gray filter to the image on hover */
 .team_box:hover img {
