@@ -488,7 +488,7 @@ a.contact_btn:hover {
 
 #Portfolio {
     padding: 60px 0px;
-    position: absolute;
+    position: relative;
 }
 
 .Portfolio-nav {
@@ -501,7 +501,6 @@ a.contact_btn:hover {
 .Portfolio-nav li {
     margin: 0 10px;
     display: inline;
-    position: absolute;
 }
 
 .Portfolio-nav li a {
@@ -517,7 +516,7 @@ a.contact_btn:hover {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    position: absolute;
+    position: relative;
 }
 
 .Portfolio-nav li a:hover {
@@ -527,7 +526,7 @@ a.contact_btn:hover {
 }
 
 .portfolioContainer {
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     padding-left: 15px;
     width: auto !important;
@@ -539,14 +538,14 @@ a.contact_btn:hover {
     overflow: hidden;
     float: left;
     padding: 12px 0px;
-    position: absolute;
+    position: relative;
 }
 
 .Portfolio-box img {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    position: absolute;
+    position: relative;
 }
 
 .Portfolio-box img:hover {
