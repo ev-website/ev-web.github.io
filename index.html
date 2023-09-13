@@ -49,6 +49,19 @@
     animation-play-state: paused;
     color: red;
   }
+
+        /* Add this CSS to your document */
+        .portfolio_img img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 50%; /* Adjust as needed for your layout */
+            }
+        }
+
 </style>
 
 <div class="moving-text-container" style="text-align: center;">
@@ -746,6 +759,7 @@ document.addEventListener("DOMContentLoaded", function () {
     padding-top: 5px; /* You can adjust the value (e.g., 20px) to increase or decrease the padding as needed */
   }
 </style>
+
 <footer class="footer_section">
     <div class="container">
         <div class="row">
@@ -754,7 +768,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="col-lg-4 col-md-8 col-sm-12">
                 <div class="contact_info">
                     <h4 class="contact-info-title">Funding Agency</h4>
-                    <div class="service-content" style="text-align: left; float: leftt;">
+                    <div class="service-content text-left"> <!-- Use text-left class here -->
                         <p style="color: black;">
                             We gratefully acknowledge the support from the National Science Foundation.
                         </p>
@@ -770,6 +784,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div>
 </footer>
+
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
