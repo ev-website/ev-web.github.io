@@ -487,6 +487,7 @@ a.contact_btn:hover {
 
 #Portfolio {
     padding: 60px 0px;
+    position: relative;
 }
 
 .Portfolio-nav {
@@ -523,6 +524,7 @@ a.contact_btn:hover {
 }
 
 .portfolioContainer {
+    position: relative;
     margin: 0 auto;
     padding-left: 15px;
     width: auto !important;
