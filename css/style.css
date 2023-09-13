@@ -1002,6 +1002,9 @@ img {
 .footer_wrapper {
     background: #232323;
 }
+.footer_section {
+    background: #ffffff;
+}
 
 .footer_bottom {
     border-top: 1px solid #3C3A3A;
