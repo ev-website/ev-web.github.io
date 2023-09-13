@@ -1499,47 +1499,8 @@ img {
     margin-bottom: 5px;
 }
 	
-	
-	
-/* Portfolio FullScreen Expander */			
-	
-#cycle-loader {
-    height: 32px;
-    left: 50%;
-    margin: -8px 0 0 -8px;
-    position: absolute;
-    top: 50%;
-    width: 32px;
-    z-index: 999;
-}
 
-#arrow_left {
-    top: 50%;
-    height: 60px;
-    position: absolute;
-    left: 30px;
-    width: 32px;
-    z-index: 1000;
-    margin-top: -30px;
-}
-
-#arrow_right {
-    top: 50%;
-    height: 60px;
-    position: absolute;
-    right: 30px;
-    width: 32px;
-    z-index: 1000;
-    margin-top: -30px;
-}
-
-#arrow_left:hover, #arrow_right:hover {
-    margin-top: -28px;
-}
-
-#arrow_left:active, #arrow_right:active {
-    margin-top: -28px;
-}
+/*insert here*/
 
 div.mc-image {
     -webkit-transition: opacity 1s ease-in-out;
