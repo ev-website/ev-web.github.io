@@ -550,6 +550,14 @@ a.contact_btn:hover {
     position: relative;
 }
 
+#dataset .Portfolio-box img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
 .Portfolio-box img:hover {
     opacity: 0.6;
 }
@@ -560,11 +568,17 @@ a.contact_btn:hover {
     text-decoration: none;
 }
 
-/*
+#dataset .Portfolio-box_img {
+  max-width: 100%;
+}
+
+#dataset .Portfolio_img {
+  max-width: 100%;
+}
 img {
     max-width: 100%;
 }
-*/
+
 /* no transition on .isotope container */
 
 .isotope .isotope-item {
@@ -695,6 +709,7 @@ img {
 }
 
 .team_area span {
+    margin-bottom: 10px;
     display: block;
 }
 
