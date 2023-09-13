@@ -1225,11 +1225,12 @@ img {
     overflow: hidden;
     display: block;
     position: relative;
+    max-width: 100%;
 }
 
-.portfolio-item .portfolio_img img {
-    width: 100%;
-    height: auto;
+.portfolio_img img {
+  max-width: 100%; /* Make images responsive by setting the max-width to 100% */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 .portfolio-item:hover .item_overlay {
@@ -1250,7 +1251,7 @@ img {
 }
 
 .item_overlay {
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
