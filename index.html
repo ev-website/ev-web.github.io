@@ -562,8 +562,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <style>
 .portfolio-item {
-    text-align: center; /* Center align the text within the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensure the container takes up the full height */
   }
+
 
   .project_name {
     margin: 0; /* Remove default margin to center the text vertically */
