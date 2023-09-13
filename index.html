@@ -300,31 +300,37 @@
 <div class="isotope fadeInLeft animated wow" style="display: flex; flex-wrap: wrap; justify-content: space-between; height: auto; padding-left: 200px;" id="portfolio_wrapper"> 
 
   <div style="flex: 0 0 calc(33.33% - 20px); margin-right: 20px;" class="portfolio-item one-third github isotope-item">
+	   <a href="https://www.google.com">
 	  <div class="portfolio_img" style="background-color: gray; border: 2px solid black; height: 100px;"></div>
     <div class="item_overlay">
         <div class="item_info">
             <h4 class="project_name">Github Code I</h4>
         </div>
     </div>
+	   </a>
   </div>
 
   
   <div style="flex: 0 0 calc(33.33% - 20px); margin-right: 20px;" class="portfolio-item one-third matlab isotope-item">
-    <div class="portfolio_img" style="background-color: gray; border: 2px solid black; height: 100px;"></div>
+     <a href="https://www.google.com">
+	  <div class="portfolio_img" style="background-color: gray; border: 2px solid black; height: 100px;"></div>
     <div class="item_overlay">
         <div class="item_info">
             <h4 class="project_name">Matlab Code I</h4>
         </div>
     </div>
+     </a>
   </div>
 
   <div style="flex: 0 0 calc(33.33% - 20px);" class="portfolio-item one-third github isotope-item">
-    <div class="portfolio_img" style="background-color: gray; border: 2px solid black; height: 100px;"></div>
+     <a href="https://www.google.com">
+	  <div class="portfolio_img" style="background-color: gray; border: 2px solid black; height: 100px;"></div>
     <div class="item_overlay">
         <div class="item_info">
             <h4 class="project_name">Github Code II</h4>
         </div>
     </div>
+     </a>
   </div>
 </div>
 
@@ -555,6 +561,13 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style>
+.portfolio-item {
+    text-align: center; /* Center align the text within the box */
+  }
+
+  .project_name {
+    margin: 0; /* Remove default margin to center the text vertically */
+  }	
 .success {
   color: green;
 }
