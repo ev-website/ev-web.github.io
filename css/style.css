@@ -709,7 +709,6 @@ img {
 }
 
 .team_area span {
-    margin-bottom: 10px;
     display: block;
 }
 
@@ -722,7 +721,7 @@ img {
     height: auto;
     position: relative;
     border-radius: 50%;
-    margin: 7px 7px 25px 7px;
+    margin: 7px 7px 7px 7px;
 }
 
 .team_box_shadow {
