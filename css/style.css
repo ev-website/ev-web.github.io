@@ -533,6 +533,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-box {
+    max-width: 100%;
     text-align: center;
     width: 350px;
     overflow: hidden;
@@ -542,6 +543,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-box img {
+    max-width: 100%;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
