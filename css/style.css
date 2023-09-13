@@ -1167,11 +1167,15 @@ img {
 /* Portfolio Items */	
 
 #portfolio_wrapper {
+
+    max-width: 100%;
+    flex-wrap: wrap;
+	/*
     position: relative;
     padding: 0;
     width: 100%;
     margin: 0 auto;
-    display: block;
+    display: block;*/
 }
 
 #portfolio_wrapper .one-four {
