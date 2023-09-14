@@ -11,6 +11,10 @@ Do not remove the back-link in this web template
 
 /* Reset
 ---------------------------------*/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
 ul {
     list-style: none;
 }
