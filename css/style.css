@@ -1257,7 +1257,7 @@ img {
 .item_overlay {
     width: 250px;
     height: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
