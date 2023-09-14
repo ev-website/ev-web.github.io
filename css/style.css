@@ -712,7 +712,7 @@ img {
     float: left;
     padding-bottom: 5px;
     padding-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .team_area span {
@@ -820,7 +820,7 @@ img {
 /* Contact
 ---------------------------------*/
 .page_section.contact {
-    padding: 90px 0 10px;
+    padding: 10px 0 10px;
 }
  
 .contact_section {
