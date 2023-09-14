@@ -100,12 +100,12 @@ p {
     margin: 0;
 }
 
-#aboutUs, #dataset, #team, #industry, #contact {
-    padding-top: 20px; /* Adjust the value as needed */
+#aboutUs, #research, #dataset, #team, #industry, #contact {
+    padding-top: 20px;/* Adjust the value as needed */
+    padding-bottom: 5px;
 }
 
-#research {
-	padding-top: 10px;
+
 		}
 #funding-section {
   background-color: white;
