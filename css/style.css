@@ -1255,7 +1255,7 @@ img {
 }
 
 .item_overlay {
-    width: 100%;
+    width: 80px;
     height: 100%;
     position: absolute;
     top: 0;
