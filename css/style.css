@@ -710,6 +710,9 @@ img {
     overflow: hidden;
     text-align: center;
     float: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
 }
 
 .team_area span {
