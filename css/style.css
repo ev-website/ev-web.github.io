@@ -694,7 +694,7 @@ img {
 }
 
 .page_section.team {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .page_section.team h6 {
@@ -719,7 +719,7 @@ img {
     float: left;
     padding-bottom: 5px;
     padding-top: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .team_area span {
@@ -735,7 +735,7 @@ img {
     height: auto;
     position: relative;
     border-radius: 50%;
-    margin: 7px 7px 7px 7px;
+    margin: 5px 5px 5px 5px;
 }
 
 .team_box_shadow {
