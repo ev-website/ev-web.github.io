@@ -757,7 +757,7 @@ img {
 }
 
 .team_box:hover .team_box_shadow {
-    box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0.80);
+    box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0);
 }
 
 .team_box:hover ul {
@@ -1118,11 +1118,7 @@ img {
 }
 
 
-/*new_profolio*/
 
-
-
-	
 /* Portfolio */	
 	
 .container.portfolio_title {
