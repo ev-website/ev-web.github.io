@@ -731,7 +731,7 @@ img {
 }
 
 .team_box {
-    width: auto;
+    width: 265px;
     height: auto;
     position: relative;
     border-radius: 50%;
@@ -751,14 +751,15 @@ img {
 
 .team_box_shadow a {
     display: block;
-    width: 100%;
+    width: 265px;
     height: 100%;
     border-bottom: 4px solid #df0031;
 }
-
+<!--
 .team_box:hover .team_box_shadow {
     box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0);
 }
+-->
 
 .team_box:hover ul {
     display: block;
