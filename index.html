@@ -346,8 +346,9 @@
 
       <!--/Portfolio Filters --> 
       <div class="isotope fadeInLeft animated wow" id="portfolio_wrapper">
+	<div class="portfolio-item github isotope-item"> 
         <div class="team_section clearfix" style="display: flex; flex-wrap: wrap; justify-content: center;">
-          <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0; padding-left: 12.5%;">
+          <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0; max-width: 100%;">
             <div class="team_box wow fadeInDown delay-03s">
               <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
               <a href="https://www.google.com">
@@ -359,20 +360,13 @@
                 </div>
               </a>
             </div>
+	   </div>
           </div>
 
 
-<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  github isotope-item">
-        <div class="portfolio_img"> <img src="img/Chen.jpg" alt="Portfolio 1"> </div>
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Shopping</h4>
-          </div>
-        </div>
-      </div>
-
-		
+	
           <div class="portfolio-item matlab isotope-item" style="flex: 1; margin-bottom: 0;">
+	   <div class="portfolio-item matlab isotope-item"> 
             <div class="team_box wow fadeInDown delay-03s">
               <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
               <a href="https://www.google.com">
@@ -384,9 +378,11 @@
                 </div>
               </a>
             </div>
+           </div>
           </div>
 
           <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0;">
+	   <div class="portfolio-item github isotope-item"> 
             <div class="team_box wow fadeInDown delay-03s">
               <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
               <a href="https://www.google.com">
@@ -398,6 +394,7 @@
                 </div>
               </a>
             </div>
+	   </div>
           </div>
         </div>
       </div>
@@ -406,26 +403,28 @@
 </section>
 
 <script>
+$(document).ready(function(){
+
   // Initialize Isotope
   var $grid = $('#portfolio_wrapper').isotope({
     itemSelector: '.portfolio-item',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows' 
   });
 
   // Filter functions
-  $('#filters').on('click', 'a', function () {
+  $('#filters').on( 'click', 'a', function() {
     var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
+    $grid.isotope({ filter: filterValue });       
   });
-
-  // Add/remove active class to filter buttons
-  $('#filters a').on('click', function () {
+  
+  // Add/remove active class on buttons
+  $('#filters a').on( 'click', function() {
     $('#filters a').removeClass('active');
     $(this).addClass('active');
   });
+
+});
 </script>
-
-
 	
 <!-- Team Area Start -->
 <section class="page_section team" id="team"><!--main-section team-start-->
@@ -775,5 +774,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <script type="text/javascript" src="js/custom.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="jquery.js"></script> 
+<script src="isotope.pkgd.js"></script>
+	
 </body>
 </html>
