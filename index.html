@@ -348,7 +348,7 @@
       <div class="isotope fadeInLeft animated wow" id="portfolio_wrapper">
 	<div class="portfolio-item github isotope-item"> 
         <div class="team_section clearfix" style="display: flex; flex-wrap: wrap; justify-content: center;">
-          <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0; max-width: 100%;">
+          <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0; padding-left: 12.5%x;">
             <div class="team_box wow fadeInDown delay-03s">
               <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
               <a href="https://www.google.com">
@@ -402,29 +402,6 @@
   </div>
 </section>
 
-<script>
-$(document).ready(function(){
-
-  // Initialize Isotope
-  var $grid = $('#portfolio_wrapper').isotope({
-    itemSelector: '.portfolio-item',
-    layoutMode: 'fitRows' 
-  });
-
-  // Filter functions
-  $('#filters').on( 'click', 'a', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });       
-  });
-  
-  // Add/remove active class on buttons
-  $('#filters a').on( 'click', function() {
-    $('#filters a').removeClass('active');
-    $(this).addClass('active');
-  });
-
-});
-</script>
 	
 <!-- Team Area Start -->
 <section class="page_section team" id="team"><!--main-section team-start-->
