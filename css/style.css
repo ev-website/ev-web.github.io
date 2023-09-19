@@ -78,7 +78,7 @@ body {
 h2 {
     font-size: 38px;
     color: #222222;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: normal;
     margin: 0px 0 10px 0;
     text-align: center;
@@ -86,7 +86,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #222222;
     font-size: 18px;
@@ -96,7 +96,7 @@ h3 {
 h6 {
     font-size: 16px;
     color: #888888;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-align: center;
     margin: 0 0 60px 0;
@@ -189,7 +189,7 @@ aboutUs {
     display: block;
     font-size: 14px;
     color: #222222;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -279,7 +279,7 @@ aboutUs {
     color: #FFF;
     line-height: 52px;
     margin: 0 0 26px 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: left;
 }
 
@@ -295,7 +295,7 @@ aboutUs {
 }
 
 a.read_more2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
     font-size: 16px;
     width: 178px;
@@ -389,7 +389,7 @@ transform: translateY(-50%);
 }
 
 .service_block h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #111111;
@@ -520,7 +520,7 @@ a.contact_btn {
     font-size: 16px;
     color: #df0031;
     border-radius: 3px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     border: 2px solid #df0031;
     transition: all 0.2s ease-in-out;
