@@ -135,6 +135,25 @@ wow = new WOW({
 });
 wow.init();
 
+// Assuming you have a filter button for Github and one for Matlab
+document.querySelector('.github').onclick = function() {
+    // Check if the Github filter is active
+    if (this.classList.contains('active')) {
+        // Add custom behavior for Github filter here
+        // For example, you can show a message or perform an action
+        alert('Github filter is active');
+    }
+};
+
+document.querySelector('.matlab').onclick = function() {
+    // Check if the Matlab filter is active
+    if (this.classList.contains('active')) {
+        // Add custom behavior for Matlab filter here
+        // For example, you can show a different message or perform a different action
+        alert('Matlab filter is active');
+    }
+};
+
 /*
 document.getElementById('').onclick = function() {
     var section = document.createElement('section');
