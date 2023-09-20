@@ -754,9 +754,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll("#filters ul li a");
-    const portfolioItems = document.querySelectorAll(".portfolio-item");
+  // Check if the page contains the #dataset element or a specific class associated with the "dataset-filter"
+  const datasetFilterContainer = document.querySelector("#dataset");
+  const filterButtons = datasetFilterContainer.querySelectorAll("#filters ul li a");
+  const portfolioItems = datasetFilterContainer.querySelectorAll(".portfolio-item");
 
+  if (datasetFilterContainer) {
     filterButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
         e.preventDefault();
@@ -783,7 +786,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Trigger the initial click event on the "All" button to display all items
     filterButtons[0].click();
-  });
+  }
+});
 </script>
 
 </body>
