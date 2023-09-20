@@ -10,6 +10,10 @@ $(window).load(function() {
     return false;
 });
 
+$('#filters').on('click', 'a', function() {
+    // Your filtering code here
+});
+
 $(document).ready(function() {
     $('#header_wrapper').scrollToFixed();
     $('.res-nav_click').click(function() {
