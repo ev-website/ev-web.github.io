@@ -315,12 +315,12 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+  // Check if the page contains the #dataset element or a specific class associated with the "dataset-filter"
   const datasetFilterContainer = document.querySelector("#dataset");
+  const filterButtons = datasetFilterContainer.querySelectorAll("#filters ul li a");
+  const portfolioItems = datasetFilterContainer.querySelectorAll(".portfolio-item");
 
   if (datasetFilterContainer) {
-    const filterButtons = datasetFilterContainer.querySelectorAll("#filters ul li a");
-    const portfolioItems = datasetFilterContainer.querySelectorAll(".portfolio-item");
-
     filterButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
         e.preventDefault();
@@ -349,7 +349,6 @@
     filterButtons[0].click();
   }
 });
-
 </script>
 	
 <!-- Datasets -->
