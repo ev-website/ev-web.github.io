@@ -311,150 +311,92 @@
 </div>
 </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll(".dataset #filters ul li a");
-    const portfolioItems = document.querySelectorAll(".dataset .portfolio-item");
-
-    // Function to handle filter clicks (your existing code)
-    function handleFilterClick(e) {
-      e.preventDefault();
-      const filterValue = this.getAttribute("data-filter");
-
-      // Log the filter value to the console
-      console.log("Filter Value:", filterValue);
-
-      // Remove the "active" class from all filter buttons
-      filterButtons.forEach((btn) => {
-        btn.classList.remove("active");
-      });
-
-      // Add the "active" class to the clicked button
-      this.classList.add("active");
-
-      // Hide or show portfolio items based on the filter value
-      portfolioItems.forEach((item) => {
-        item.style.display = "none"; // Hide all items
-
-        if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
-          item.style.display = "block"; // Show matching items
-        }
-      });
-    }
-
-    // Add click event listeners to filter buttons
-    filterButtons.forEach((button) => {
-      button.addEventListener("click", handleFilterClick);
-    });
-
-    // Trigger the initial click event on the "All" button to display all items
-    filterButtons[0].click();
-
-    // Initialize the Bootstrap carousel
-    $('#carousel-example-generic').carousel();
-
-    // Ensure the navigation bar sticks to the top when scrolling
-    window.addEventListener("scroll", function () {
-      var navBar = document.querySelector(".navbar");
-      if (window.scrollY > 50) {
-        navBar.classList.add("navbar-fixed-top");
-      } else {
-        navBar.classList.remove("navbar-fixed-top");
-      }
-    });
-  });
-</script>
-
-	
-<!-- Datasets -->
+<!-- Portfolio -->
 <section id="dataset" class="content"> 
-  <div class="container">
-    <!-- Container -->
-    <div class="container portfolio_title"> 
-      <div class="section-title">
-        <h2>Datasets</h2>
-      </div>
-      <!--/Title --> 
+<div class="container">
+  <!-- Container -->
+  <div class="container portfolio_title"> 
+    
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Datasets</h2>
     </div>
-    <!-- Container -->
-
-<div class="portfolio-top"></div>
-
-    <!-- Portfolio Filters -->
-    <div class="dataset"> 
-      <div id="filters" class="sixteen columns">
-        <ul class="clearfix">
-          <li><a id="all" href="#" data-filter="*" class="active">
-            <h5>All</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".github">
-            <h5>Github</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".matlab">
-            <h5>Matlab</h5>
-            </a></li>
-        </ul>
-      </div>
-
-      <!--/Portfolio Filters --> 
-      <div class="isotope fadeInLeft animated wow" id="portfolio_wrapper">
-	
-        <div class="team_section clearfix" style="display: flex; flex-wrap: wrap; justify-content: center;">
-	
-          <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0;">
-            <div class="team_box wow fadeInDown delay-03s">
-              <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-              <a href="https://www.google.com">
-                <div class="portfolio_img" style="background-color: gray; padding-bottom: 100%;"></div>
-                <div class="item_overlay">
-                  <div class="item_info">
-                    <h4 class="project_name">Github Code I</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-	   </div>
-          
-
-
-	
-          <div class="portfolio-item matlab isotope-item" style="flex: 1; margin-bottom: 0;">
-            <div class="team_box wow fadeInDown delay-03s">
-              <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-              <a href="https://www.google.com">
-                <div class="portfolio_img" style="background-color: navy; padding-bottom: 100%;"></div>
-                <div class="item_overlay">
-                  <div class="item_info">
-                    <h4 class="project_name">Matlab Code I</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-           </div>
-          
-
-	    
-	
-          <div class="portfolio-item github isotope-item" style="flex: 1; margin-bottom: 0;">
-            <div class="team_box wow fadeInDown delay-03s">
-              <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-              <a href="https://www.google.com">
-                <div class="portfolio_img" style="background-color: gray; padding-bottom: 100%;"></div>
-                <div class="item_overlay">
-                  <div class="item_info">
-                    <h4 class="project_name">Github Code II</h4>
-                  </div>
-                </div>
-              </a>
-            </div>
-	   </div>
-          
-        </div>
-      </div>
-    </div>
+    <!--/Title --> 
+    
   </div>
-</section>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+  
+  <!-- Portfolio Filters -->
+  <div class="dataset"> 
+    
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          <h5>All</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".github">
+          <h5>Github</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".matlab">
+          <h5>Matlab</h5>
+          </a></li>
+      </ul>
+    </div>
+    <!--/Portfolio Filters --> 
 
+<div class="isotope fadeInLeft animated wow" style="display: flex; flex-wrap: wrap; justify-content: space-between; height: auto; padding-left: 5px;" id="portfolio_wrapper"> 
+
+  <div style="flex: 0 0 calc(33.33% - 10px); margin-right: 5px;" class="portfolio-item one-third github isotope-item">
+	   <a href="https://www.google.com">
+	  <div class="portfolio_img" style="background-color: gray; height: 100px; width: 250px;"></div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Github Code I</h4>
+        </div>
+    </div>
+	   </a>
+  </div>
+
+  
+  <div style="flex: 0 0 calc(33.33% - 10px); margin-right: 5px;" class="portfolio-item one-third matlab isotope-item">
+     <a href="https://www.google.com">
+	  <div class="portfolio_img" style="background-color: navy; height: 100px; width: 250px;"></div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Matlab Code I</h4>
+        </div>
+    </div>
+     </a>
+  </div>
+
+  <div style="flex: 0 0 calc(33.33% - 10px); margin-right: 5px;" class="portfolio-item one-third matlab isotope-item">
+     <a href="https://www.google.com">
+	  <div class="portfolio_img" style="background-color: navy;  height: 100px; width: 250px;"></div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Matlab Code II</h4>
+        </div>
+    </div>
+     </a>
+  </div>
+	
+
+  <div style="flex: 0 0 calc(33.33% - 10px);" class="portfolio-item one-third github isotope-item">
+     <a href="https://www.google.com">
+	  <div class="portfolio_img" style="background-color: gray;  height: 100px; width: 250px;"></div>
+    <div class="item_overlay">
+        <div class="item_info">
+            <h4 class="project_name">Github Code II</h4>
+        </div>
+    </div>
+     </a>
+  </div>
+
+</div>
+</div>
+</section>
 	
 <!-- Team Area Start -->
 <section class="page_section team" id="team"><!--main-section team-start-->
@@ -794,7 +736,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
 <script type="text/javascript" src="js/jquery.nav.js"></script> 
