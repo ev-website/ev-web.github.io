@@ -315,36 +315,40 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll(".dataset #filters ul li a");
-    const portfolioItems = document.querySelectorAll(".dataset .portfolio-item");
+  const filterButtons = document.querySelectorAll(".dataset #filters ul li a");
+  const portfolioItems = document.querySelectorAll(".dataset .portfolio-item");
 
-    filterButtons.forEach((button) => {
-      button.addEventListener("click", function (e) {
-        e.preventDefault();
-        const filterValue = this.getAttribute("data-filter");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const filterValue = this.getAttribute("data-filter");
 
-        // Remove the "active" class from all filter buttons
-        filterButtons.forEach((btn) => {
-          btn.classList.remove("active");
-        });
+      // Log the filter value to the console
+      console.log("Filter Value:", filterValue);
 
-        // Add the "active" class to the clicked button
-        this.classList.add("active");
+      // Remove the "active" class from all filter buttons
+      filterButtons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
 
-        // Hide or show portfolio items based on the filter value
-        portfolioItems.forEach((item) => {
-          item.style.display = "none"; // Hide all items
+      // Add the "active" class to the clicked button
+      this.classList.add("active");
 
-          if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
-            item.style.display = "block"; // Show matching items
-          }
-        });
+      // Hide or show portfolio items based on the filter value
+      portfolioItems.forEach((item) => {
+        item.style.display = "none"; // Hide all items
+
+        if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+          item.style.display = "block"; // Show matching items
+        }
       });
     });
-
-    // Trigger the initial click event on the "All" button to display all items
-    filterButtons[0].click();
   });
+
+  // Trigger the initial click event on the "All" button to display all items
+  filterButtons[0].click();
+});
+
 </script>
 
 	
