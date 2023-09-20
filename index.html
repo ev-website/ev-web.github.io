@@ -755,25 +755,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Select the filter buttons
     const filterButtons = document.querySelectorAll("#filters ul li a");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-    // Loop through the filter buttons and find the ones for Github and Matlab
     filterButtons.forEach((button) => {
-      if (button.getAttribute("data-filter") === ".github" || button.getAttribute("data-filter") === ".matlab") {
-        // Add the "active" class to the selected buttons
-        button.classList.add("active");
-      }
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const filterValue = this.getAttribute("data-filter");
+
+        // Remove the "active" class from all filter buttons
+        filterButtons.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        // Add the "active" class to the clicked button
+        this.classList.add("active");
+
+        // Hide or show portfolio items based on the filter value
+        portfolioItems.forEach((item) => {
+          item.style.display = "none"; // Hide all items
+
+          if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+            item.style.display = "block"; // Show matching items
+          }
+        });
+      });
     });
 
-    // Trigger the click event on the selected buttons to apply the filter
-    filterButtons.forEach((button) => {
-      if (button.classList.contains("active")) {
-        button.click();
-      }
-    });
+    // Trigger the initial click event on the "All" button to display all items
+    filterButtons[0].click();
   });
 </script>
+
 
 </body>
 </html>
