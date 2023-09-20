@@ -752,5 +752,39 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll("#filters ul li a");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const filterValue = this.getAttribute("data-filter");
+
+        // Remove the "active" class from all filter buttons
+        filterButtons.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        // Add the "active" class to the clicked button
+        this.classList.add("active");
+
+        // Hide or show portfolio items based on the filter value
+        portfolioItems.forEach((item) => {
+          item.style.display = "none"; // Hide all items
+
+          if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+            item.style.display = "block"; // Show matching items
+          }
+        });
+      });
+    });
+
+    // Trigger the initial click event on the "All" button to display all items
+    filterButtons[0].click();
+  });
+</script>
+
 </body>
 </html>
