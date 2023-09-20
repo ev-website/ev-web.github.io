@@ -315,18 +315,15 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-  // Check if the page contains the #dataset element or a specific class associated with the "dataset-filter"
-  const datasetFilterContainer = document.querySelector("#dataset");
-  const filterButtons = datasetFilterContainer.querySelectorAll("#filters ul li a");
-  const portfolioItems = datasetFilterContainer.querySelectorAll(".portfolio-item");
+    const filterButtons = document.querySelectorAll(".dataset #filters ul li a");
+    const portfolioItems = document.querySelectorAll(".dataset .portfolio-item");
 
-  if (datasetFilterContainer) {
     filterButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
         e.preventDefault();
         const filterValue = this.getAttribute("data-filter");
 
-        // Remove the "active" class from all filter buttons within the dataset section
+        // Remove the "active" class from all filter buttons
         filterButtons.forEach((btn) => {
           btn.classList.remove("active");
         });
@@ -334,7 +331,7 @@
         // Add the "active" class to the clicked button
         this.classList.add("active");
 
-        // Hide or show portfolio items based on the filter value within the dataset section
+        // Hide or show portfolio items based on the filter value
         portfolioItems.forEach((item) => {
           item.style.display = "none"; // Hide all items
 
@@ -345,11 +342,11 @@
       });
     });
 
-    // Trigger the initial click event on the "All" button to display all items within the dataset section
+    // Trigger the initial click event on the "All" button to display all items
     filterButtons[0].click();
-  }
-});
+  });
 </script>
+
 	
 <!-- Datasets -->
 <section id="dataset" class="content"> 
