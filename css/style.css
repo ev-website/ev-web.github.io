@@ -405,11 +405,11 @@ transform: translateY(-50%);
 /* New Dataset class added */
 
 /* New classes for datasets with different names */
-.datasets-items {
+.dataset-items {
   display: flex;
 }
 
-.datasets-item {
+.dataset-item {
   width: 33.33%; /* Adjust the width as needed for three items in a row */
   margin-bottom: 0;
   padding: 0;
@@ -417,7 +417,7 @@ transform: translateY(-50%);
 }
 
 /* Update the styles for the new classes */
-.datasets-item .team_section {
+.dataset-item .team_section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -425,21 +425,21 @@ transform: translateY(-50%);
 }
 
 /* Remove the inline styles for .portfolio_img in HTML */
-.datasets-item .portfolio_img {
+.dataset-item .portfolio_img {
   width: 100%; /* Adjust the width as needed */
   background-color: gray; /* Background color for the first item */
 }
 
-.datasets-item .portfolio-img:nth-child(2) {
+.dataset-item .portfolio-img:nth-child(2) {
   background-color: navy; /* Background color for the second item */
 }
 
-.datasets-item .portfolio-img:nth-child(3) {
+.dataset-item .portfolio-img:nth-child(3) {
   background-color: gray; /* Background color for the third item */
 }
 
 /* Update the styles for .project_name */
-.datasets-item .project_name {
+.dataset-item .project_name {
   margin-top: 10px;
   font-size: 18px;
 }
@@ -1232,7 +1232,7 @@ img {
     text-transform: uppercase;
 }
 
-.datasets.portfolio_img {
+.dataset.portfolio_img {
 	max-width: 100%;
 }
 
