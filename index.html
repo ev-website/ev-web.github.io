@@ -752,6 +752,28 @@ document.addEventListener("DOMContentLoaded", function () {
 <script type="text/javascript" src="js/custom.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-	
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select the filter buttons
+    const filterButtons = document.querySelectorAll("#filters ul li a");
+
+    // Loop through the filter buttons and find the ones for Github and Matlab
+    filterButtons.forEach((button) => {
+      if (button.getAttribute("data-filter") === ".github" || button.getAttribute("data-filter") === ".matlab") {
+        // Add the "active" class to the selected buttons
+        button.classList.add("active");
+      }
+    });
+
+    // Trigger the click event on the selected buttons to apply the filter
+    filterButtons.forEach((button) => {
+      if (button.classList.contains("active")) {
+        button.click();
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
