@@ -89,7 +89,7 @@
 	<li class="active"><a href="#carousel-example-generic" class="scroll-link">Home</a></li>
         <li><a href="#aboutUs" class="scroll-link">About</a></li>
         <li><a href="#research" class="scroll-link">Research Areas</a></li>
-        <li><a href="#dataset" class="scroll-link">Datasets</a></li>
+        <li><a href="#datasets" class="scroll-link">Datasets</a></li>
         <li><a href="#team" class="scroll-link">Team</a></li>
         <li><a href="#industry" class="scroll-link">Advisory Board</a></li>
         <li><a href="#contact" class="scroll-link">Contact Us</a></li>
@@ -314,7 +314,7 @@
 
 	
 <!-- Datasets -->
-<section id="dataset" class="content"> 
+<section id="datasets" class="content"> 
   <div class="container">
     <!-- Container -->
     <div class="container portfolio_title"> 
@@ -328,7 +328,7 @@
 <div class="portfolio-top"></div>
 
     <!-- Portfolio Filters -->
-    <div class="dataset"> 
+    <div class="datasets"> 
       <div id="filters" class="sixteen columns">
         <ul class="clearfix">
           <li><a id="all" href="#" data-filter="*" class="active">
@@ -753,10 +753,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Add this script to your HTML -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll("#filters ul li a");
+    const filterButtons = document.querySelectorAll(".datasets ul li a");
     const portfolioItems = document.querySelectorAll(".portfolio-item");
 
     filterButtons.forEach((button) => {
@@ -776,7 +775,7 @@ document.addEventListener("DOMContentLoaded", function () {
         portfolioItems.forEach((item) => {
           item.style.display = "none"; // Hide all items
 
-          if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+          if (filterValue === "all" || item.classList.contains(filterValue + "-item")) {
             item.style.display = "block"; // Show matching items
           }
         });
