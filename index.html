@@ -53,6 +53,22 @@
     color: red;
   }
 
+  .filter-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  float: left;
+  display: none; /* Initially hide all boxes */
+}
+
+.github-box {
+  background-color: gray;
+}
+
+.matlab-box {
+  background-color: blue;
+}
+
 </style>
 
 <div class="moving-text-container" style="text-align: center;">
@@ -298,6 +314,33 @@
 </div>
 </section>
 
+
+<script>
+  // Function to filter boxes based on dataset
+  function filterBoxes(dataset) {
+    if (dataset === 'all') {
+      // Show all boxes
+      $('.filter-box').show();
+    } else {
+      // Hide all boxes
+      $('.filter-box').hide();
+      // Show boxes with the selected dataset
+      $('.' + dataset + '-box').show();
+    }
+  }
+
+  // Initialize by showing all boxes
+  filterBoxes('all');
+
+  // Event handler for filter clicks
+  $('#filters a').click(function () {
+    var dataset = $(this).data('filter');
+    filterBoxes(dataset);
+    return false; // Prevent default link behavior
+  });
+</script>
+
+	
 <!-- Portfolio -->
 <section id="dataset" class="content"> 
   <div class="container">
