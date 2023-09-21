@@ -426,7 +426,7 @@ transform: translateY(-50%);
 
 /* Remove the inline styles for .portfolio_img in HTML */
 .dataset-item .portfolio_img {
-  width: 100%; /* Adjust the width as needed */
+  width: 100px; /* Adjust the width as needed */
   background-color: gray; /* Background color for the first item */
 }
 
