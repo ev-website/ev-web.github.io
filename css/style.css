@@ -591,7 +591,7 @@ a.contact_btn:hover {
 .Portfolio-box {
     max-width: 100%;
     text-align: center;
-    width: 150px;
+    width: 100px;
     overflow: hidden;
     float: left;
     padding: 12px 0px;
@@ -599,7 +599,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-box img {
-    max-width: 100%;
+    max-width: 100px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -607,7 +607,7 @@ a.contact_btn:hover {
 }
 
 #dataset .Portfolio-box img {
-    max-width: 100%;
+    max-width: 100px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -625,14 +625,14 @@ a.contact_btn:hover {
 }
 
 #dataset .Portfolio-box_img {
-  max-width: 100%;
+  max-width: 100px;
 }
 
 #dataset .Portfolio_img {
-  max-width: 100%;
+  max-width: 100px;
 }
 img {
-    max-width: 100%;
+    max-width: 100px;
 }
 
 /* no transition on .isotope container */
