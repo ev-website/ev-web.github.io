@@ -129,6 +129,84 @@
 
 
 
+.gallery img::before {
+  content: attr(data-text) ' - ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 4px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery img::after {
+  content: 'Visit Link';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery img:hover {
+  filter: brightness(10%) !important;
+}
+
+.gallery img:hover::before,
+.gallery img:hover::after {
+  opacity: 1 !important;
+  transition-delay: 0.2s;
+  pointer-events: auto;
+}
+
+.gallery img:hover::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.gallery img:hover::after:hover {
+  background: red; /* Change the background color to red on hover */
+  text-align: center;
+  line-height: 60px; /* Adjust to vertically center the text */
+  font-size: 16px;
+}
+/* Caption styles */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 4px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.caption a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.caption:hover {
+  opacity: 1;
+}
+
+.caption:hover a {
+  color: red; /* Change the color to red on hover */
+}
+
+
   #filters {
     text-align: center;
   }
@@ -476,6 +554,39 @@
 </section>
 
 <script>
+
+const galleryImages = document.querySelectorAll('#gallery img');
+
+galleryImages.forEach(img => {
+  img.addEventListener('mouseenter', () => {
+    const text = img.getAttribute('data-text');
+    const link = img.getAttribute('data-link');
+    
+    // Create a caption element
+    const caption = document.createElement('div');
+    caption.classList.add('caption');
+    caption.textContent = text;
+    
+    // Create a link element and set its href attribute
+    const anchor = document.createElement('a');
+    anchor.href = link;
+    anchor.textContent = 'Visit Link';
+    
+    // Append the link element to the caption
+    caption.appendChild(anchor);
+
+    // Append the caption to the image's parent (the #gallery div)
+    img.parentElement.appendChild(caption);
+  });
+
+  img.addEventListener('mouseleave', () => {
+    // Remove the caption element on mouse leave
+    const caption = img.parentElement.querySelector('.caption');
+    if (caption) {
+      caption.remove();
+    }
+  });
+});
 
   // Get filter links
 const filters = document.querySelectorAll('#filters a');
