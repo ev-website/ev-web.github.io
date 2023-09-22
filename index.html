@@ -85,11 +85,11 @@
 } 
 
 #gallery img:hover {
-  filter: brightness(110%);
+  filter: brightness(110%) !important;
 }
 
 #gallery img:hover::after {
-  opacity: 9;
+  opacity: 1 !important;
 }
 
 .gallery img::after {
@@ -105,11 +105,11 @@
 } 
 
 .gallery img:hover {
-  filter: brightness(10%);
+  filter: brightness(110%) !important;
 }
 
 .gallery img:hover::after {
-  opacity: 1;
+  opacity: 1 !important;
 }	
 #filters {
     text-align: center; /* Center-align the content within the div */
@@ -429,16 +429,24 @@
 </div>
 
   <div id="gallery">
-    <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 1" data-link="google.com">
-    <img class="github" src="img/Netto.jpg" data-text="Github Code 1" data-link="google.com">
-    <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 2" data-link="google.com">
-    <img class="github" src="img/Netto.jpg" data-text="Github Code 2" data-link="google.com">
+    <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 1" data-link="https://www.google.com/">
+    <img class="github" src="img/Netto.jpg" data-text="Github Code 1" data-link="https://www.google.com/">
+    <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 2" data-link="https://www.google.com/">
+    <img class="github" src="img/Netto.jpg" data-text="Github Code 2" data-link="https://www.google.com/">
   </div>
 
 </section>
 
 <script>
+const imgs = document.querySelectorAll('#gallery');
+imgs.forEach(img => {
 
+  img.addEventListener('mouseenter', () => {
+    console.log('Hovered!'); 
+  });
+
+});
+	
   // Get filter links
 const filters = document.querySelectorAll('#filters a');
 
