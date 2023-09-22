@@ -314,32 +314,6 @@
 </div>
 </section>
 
-
-<script>
-  // Function to filter boxes based on dataset
-  function filterBoxes(dataset) {
-    if (dataset === 'all') {
-      // Show all boxes
-      $('.filter-box').show();
-    } else {
-      // Hide all boxes
-      $('.filter-box').hide();
-      // Show boxes with the selected dataset
-      $('.' + dataset + '-box').show();
-    }
-  }
-
-  // Initialize by showing all boxes
-  filterBoxes('all');
-
-  // Event handler for filter clicks
-  $('#filters a').click(function () {
-    var dataset = $(this).data('filter');
-    filterBoxes(dataset);
-    return false; // Prevent default link behavior
-  });
-</script>
-
 	
 <!-- Portfolio -->
 <section id="dataset" class="content"> 
@@ -374,26 +348,49 @@
       <!--/Portfolio Filters --> 
     </div>
 
-    <!-- Gray Box for .github filtered -->
-    <div class="filter-box gray-box github-box">
-      <img src="img/Li.jpg" alt="GitHub Image">
-    </div>
+    <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  github isotope-item">
+        <div class="portfolio_img"> <img src="img/Netto.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">SMS Mobile App</h4>
+          </div>
+        </div>
+        </div>
+      <!--/Portfolio Item --> 
 
-    <!-- Blue Box for .matlab filtered with image -->
-    <div class="filter-box blue-box matlab-box">
-      <img src="img/Li.jpg" alt="Matlab Image">
-    </div>
+     <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  github isotope-item">
+        <div class="portfolio_img"> <img src="img/Netto.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">SMS Mobile App</h4>
+          </div>
+        </div>
+        </div>
+      <!--/Portfolio Item --> 
 
-    <!-- Gray Box for .github filtered with image -->
-    <div class="filter-box gray-box github-box">
-      <img src="img/Li.jpg" alt="GitHub Image">
-    </div>
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  matlab isotope-item">
+        <div class="portfolio_img"> <img src="img/Netto.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">SMS Mobile App</h4>
+          </div>
+        </div>
+        </div>
+      <!--/Portfolio Item --> 
 
-    <!-- Blue Box for .matlab filtered with image -->
-    <div class="filter-box blue-box matlab-box">
-      <img src="img/Li.jpg" alt="Matlab Image">
-    </div>
-
+      <!-- Portfolio Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  matlab isotope-item">
+        <div class="portfolio_img"> <img src="img/Netto.jpg"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">SMS Mobile App</h4>
+          </div>
+        </div>
+        </div>
+      <!--/Portfolio Item --> 
 	  
   </div>
 </section>
