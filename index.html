@@ -238,6 +238,43 @@
    /* Initially hide all boxes */
 }
 
+/* Hover effect styles */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 4px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  filter: brightness(100%);
+  transition: filter 0.3s;
+}
+
+.image-container:hover::before {
+  opacity: 1;
+}
+
+.image-container:hover img {
+  filter: brightness(10%);
+}
+
+
 </style>
 
 <div class="moving-text-container" style="text-align: center;">
@@ -498,11 +535,27 @@
 </div>
 
 <div id="gallery">
+  <div class="image-container">
+    <img src="img/Zhao.jpg" data-text="Matlab Code 1" data-link="https://www.google.com/">
+  </div>
+  <div class="image-container">
+    <img src="img/Netto.jpg" data-text="Github Code 1" data-link="https://www.google.com/">
+  </div>
+  <div class="image-container">
+    <img src="img/Zhao.jpg" data-text="Matlab Code 2" data-link="https://www.google.com/">
+  </div>
+  <div class="image-container">
+    <img src="img/Netto.jpg" data-text="Github Code 2" data-link="https://www.google.com/">
+  </div>
+</div>
+	
+<!--
+<div id="gallery">
   <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 1" data-link="https://www.google.com/">
   <img class="github" src="img/Netto.jpg" data-text="Github Code 1" data-link="https://www.google.com/">
   <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 2" data-link="https://www.google.com/">
   <img class="github" src="img/Netto.jpg" data-text="Github Code 2" data-link="https://www.google.com/">
-</div>
+</div> -->
 
 </section>
 
