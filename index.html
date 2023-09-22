@@ -72,45 +72,56 @@
 
 /* Hover effect styles */
 
+/* Hover effect styles */
+
 #gallery img::after {
-  content: attr(data-text) ' - ' attr(data-link);
+  content: '';
   position: absolute;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   width: 100%;
   padding: 4px 0;
   text-align: center;
-  opacity: 0;  
+  opacity: 0;
   transition: 0.3s;
-} 
+}
 
 #gallery img:hover {
   filter: brightness(10%) !important;
 }
 
 #gallery img:hover::after {
-  opacity: 9 !important;
+  opacity: 1 !important;
 }
 
-.gallery img::after {
-  content: attr(data-text) ' - ' attr(data-link);
+/* Caption styles */
+.caption {
   position: absolute;
-  background: rgba(0,0,0,0.5);
-  color: white;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  padding: 4px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   text-align: center;
-  opacity: 9;  
-  transition: 0.3s;
-} 
-
-.gallery img:hover {
-  filter: brightness(10%) !important;
+  padding: 4px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.gallery img:hover::after {
-  opacity: 9 !important;
-}	
+.caption a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.caption:hover {
+  opacity: 1;
+}
+
+.caption:hover a {
+  color: red; /* Change the color to red on hover */
+}
+
 
   #filters {
     text-align: center;
@@ -459,14 +470,41 @@
 </section>
 
 <script>
-const imgs = document.querySelectorAll('#gallery');
-imgs.forEach(img => {
+// Select all img elements inside the #gallery div
+const imgs = document.querySelectorAll('#gallery img');
 
+imgs.forEach(img => {
   img.addEventListener('mouseenter', () => {
-    console.log('Hovered!'); 
+    // Get the data-text and data-link attributes from the image
+    const text = img.getAttribute('data-text');
+    const link = img.getAttribute('data-link');
+
+    // Create a caption element
+    const caption = document.createElement('div');
+    caption.classList.add('caption');
+    caption.textContent = `${text} - `;
+    
+    // Create a link element and set its href attribute
+    const anchor = document.createElement('a');
+    anchor.href = link;
+    anchor.textContent = 'Visit Link';
+    
+    // Append the link element to the caption
+    caption.appendChild(anchor);
+
+    // Append the caption to the image's parent (the #gallery div)
+    img.parentElement.appendChild(caption);
   });
 
+  img.addEventListener('mouseleave', () => {
+    // Remove the caption element on mouse leave
+    const caption = img.parentElement.querySelector('.caption');
+    if (caption) {
+      caption.remove();
+    }
+  });
 });
+
 	
   // Get filter links
 const filters = document.querySelectorAll('#filters a');
