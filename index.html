@@ -80,25 +80,25 @@
 /* Hover effect styles */
 
 #gallery img::before {
-  content: attr(data-text) ' - ' !important;;
+  content: attr(data-text) ' - ';
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  width: 100%;
-  padding: 4px 0;
-  text-align: center;
-  opacity: 0;
-  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  width: 100% !important;
+  padding: 4px 0 !important;
+  text-align: center !important;
+  opacity: 0 !important;
+  transition: 0.3s !important;
 }
 
 #gallery img::after {
-  content: 'Visit Link' !important;;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: 0.3s;
+  content: 'Visit Link';
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  opacity: 0 !important;
+  transition: 0.3s !important;
 }
 
 #gallery img:hover {
@@ -110,28 +110,31 @@
   opacity: 1 !important;
 }
 
+
+/* Hover effect styles */
+
 /* Hover effect styles */
 
 .gallery img::before {
-  content: attr(data-text) ' - ' !important;;
+  content: attr(data-text) ' - ';
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  width: 100%;
-  padding: 4px 0;
-  text-align: center;
-  opacity: 0;
-  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  width: 100% !important;
+  padding: 4px 0 !important;
+  text-align: center !important;
+  opacity: 0 !important;
+  transition: 0.3s !important;
 }
 
 .gallery img::after {
-  content: 'Visit Link' !important;;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: 0.3s;
+  content: 'Visit Link';
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  opacity: 0 !important;
+  transition: 0.3s !important;
 }
 
 .gallery img:hover {
@@ -143,6 +146,19 @@
   opacity: 1 !important;
 }
 
+/* Caption styles */
+.caption {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  width: 100% !important;
+  padding: 4px 0 !important;
+  text-align: center !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+}
 
   #filters {
     text-align: center;
@@ -495,11 +511,21 @@
 const galleryImages = document.querySelectorAll('#gallery img');
 
 galleryImages.forEach(img => {
-  img.addEventListener('mouseenter', () => {
-    console.log('Hovered!'); // Just for debugging, you can remove this line
+  img.addEventListener('mouseover', () => {
+    const text = img.getAttribute('data-text');
+    const caption = document.createElement('div');
+    caption.className = 'caption';
+    caption.textContent = text;
+    img.insertAdjacentElement('afterend', caption);
+  });
+
+  img.addEventListener('mouseout', () => {
+    const caption = img.parentElement.querySelector('.caption');
+    if (caption) {
+      caption.remove();
+    }
   });
 });
-
 
   // Get filter links
 const filters = document.querySelectorAll('#filters a');
