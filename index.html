@@ -330,49 +330,56 @@
 
   <h1 class="data-container">DataSets</h1>
 
-  <div class="data-container filter-container">
-    <button>All</button>
-    <button>Github</button>
-    <button>Matlab</button>
-  </div>
+  <div id="filters">
 
-  <div class="data-container">
-    <img class="data-image data-blue" src="img/Netto.jpg">
-    <img class="data-image data-black" src="img/Netto.jpg">
-    <img class="data-image data-blue" src="img/Netto.jpg">
-    <img class="data-image data-black" src="img/Netto.jpg">
+  <ul>
+    <li><a id="all" href="#" data-filter="*" class="active">All</a></li>
+    <li><a href="#" data-filter=".github">Github</a></li>
+    <li><a href="#" data-filter=".matlab">Matlab</a></li>
+  </ul>
+
+</div>
+
+  <div id="gallery">
+    <img class="matlab" src="img/Netto.jpg">
+    <img class="github" src="img/Netto.jpg">
+    <img class="matlab" src="img/Netto.jpg">
+    <img class="github" src="img/Netto.jpg">
   </div>
 
 </section>
 
 <script>
 
-  const filterContainer = document.querySelector('.filter-container');
+  // Get filter links
+const filters = document.querySelectorAll('#filters a');
 
-  filterContainer.addEventListener('click', e => {
-    const filter = e.target.textContent.toLowerCase();
-    dataFilterSelection(filter);
+// Filter images on click
+filters.forEach(link => {
+
+  link.addEventListener('click', () => {
+
+    let filter = link.getAttribute('data-filter');
+    
+    filterImages(filter);
+
+    link.classList.add('active');
   });
 
-  function dataFilterSelection(filter) {
+});
 
-  const images = document.querySelectorAll('.data-image');
+function filterImages(filter) {
+
+  let images = document.querySelectorAll('#gallery img');
 
   images.forEach(image => {
-
-    if (filter === 'all') {
+    if (filter === '*') {
+      image.style.display = 'block';
+    } else if (image.classList.contains(filter)) {
       image.style.display = 'block';
     } else {
-
-      // Check if image has class that matches filter
-      if (image.classList.contains(filter)) {
-        image.style.display = 'block';
-      } else {
-        image.style.display = 'none';
-      }
-
+      image.style.display = 'none';
     }
-
   });
 
 }
