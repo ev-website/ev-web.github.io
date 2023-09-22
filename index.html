@@ -69,10 +69,19 @@
   }
 }
 
-	
-  .data-container {
+
+#filters {
+    text-align: center; /* Center-align the content within the div */
+  }
+
+.filters {
+    text-align: center; /* Center-align the content within the div */
+  }
+
+.data-container {
   display: flex;
   justify-content: center;
+  color: black;
 }
 
 .data-image {  
@@ -366,7 +375,7 @@
 
 <section id="dataset" class="content">
 
-  <h1 class="data-container">DataSets</h1>
+  <h1 class="data-container">DATASETS</h1>
 
   <div id="filters">
 
@@ -379,10 +388,10 @@
 </div>
 
   <div id="gallery">
-    <img class="matlab" src="img/Zhao.jpg">
-    <img class="github" src="img/Netto.jpg">
-    <img class="matlab" src="img/Zhao.jpg">
-    <img class="github" src="img/Netto.jpg">
+    <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 1" data-link="google.com">
+    <img class="github" src="img/Netto.jpg" data-text="Github Code 1" data-link="google.com">
+    <img class="matlab" src="img/Zhao.jpg" data-text="Matlab Code 2" data-link="google.com">
+    <img class="github" src="img/Netto.jpg" data-text="Github Code 2" data-link="google.com">
   </div>
 
 </section>
