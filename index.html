@@ -355,21 +355,27 @@
   });
 
   function dataFilterSelection(filter) {
-    const images = document.querySelectorAll('.data-image');
 
-    images.forEach(image => {
-      if (filter === 'all') {
+  const images = document.querySelectorAll('.data-image');
+
+  images.forEach(image => {
+
+    if (filter === 'all') {
+      image.style.display = 'block';
+    } else {
+
+      // Check if image has class that matches filter
+      if (image.classList.contains(filter)) {
         image.style.display = 'block';
       } else {
-        if (image.classList.contains(filter)) {
-          image.style.display = 'block';
-        } else {
-          image.style.display = 'none';
-        }
+        image.style.display = 'none';
       }
-    });
-  }
 
+    }
+
+  });
+
+}
 </script>
 	
 <!-- Portfolio 
