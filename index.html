@@ -70,6 +70,47 @@
 }
 
 
+/* Hover effect styles */
+
+#gallery img::after {
+  content: attr(data-text) ' - ' attr(data-link);
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+  opacity: 0;  
+  transition: 0.3s;
+} 
+
+#gallery img:hover {
+  filter: brightness(110%);
+}
+
+#gallery img:hover::after {
+  opacity: 1;
+}
+
+.gallery img::after {
+  content: attr(data-text) ' - ' attr(data-link);
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+  opacity: 0;  
+  transition: 0.3s;
+} 
+
+.gallery img:hover {
+  filter: brightness(110%);
+}
+
+.gallery img:hover::after {
+  opacity: 1;
+}	
 #filters {
     text-align: center; /* Center-align the content within the div */
   }
