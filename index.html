@@ -600,7 +600,7 @@ function filterImages(filter) {
 }
 </script>
 -->
-	
+
 <section id="dataset" class="content"> 
   <div class="container">
     <div class="container portfolio_title"> 
@@ -629,7 +629,7 @@ function filterImages(filter) {
     </div>
 
 <div class="team_area">
-        <div class="team_box wow fadeInDown delay-03s">
+        <div class="team_box wow fadeInDown delay-03s matlab">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Pong.png" alt="">
           <ul class="social-icons">
@@ -640,7 +640,7 @@ function filterImages(filter) {
 
 
 <div class="team_area">
-        <div class="team_box wow fadeInDown delay-03s">
+        <div class="team_box wow fadeInDown delay-03s github">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Pong.png" alt="">
           <ul class="social-icons">
@@ -651,18 +651,18 @@ function filterImages(filter) {
 
 
 <div class="team_area">
-        <div class="team_box wow fadeInDown delay-03s">
+        <div class="team_box wow fadeInDown delay-03s matlab">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Pong.png" alt="">
           <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">Github</a></li>
+            <li><a href="https://people.njit.edu/faculty/wp24">Matlab</a></li>
           </ul>
         </div>
       </div>
 
 
 <div class="team_area">
-        <div class="team_box wow fadeInDown delay-03s">
+        <div class="team_box wow fadeInDown delay-03s github">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Pong.png" alt="">
           <ul class="social-icons">
@@ -672,6 +672,33 @@ function filterImages(filter) {
       </div>
 	
 </section> -->
+
+
+<script>
+$(document).ready(function() {
+  var $teamArea = $('.team_area');
+
+  // Hide all team boxes by default
+  $teamArea.hide();
+
+  // Show all team boxes when the "All" filter is selected
+  $('#all').click(function() {
+    $teamArea.show();
+  });
+
+  // Show only the team boxes with the "github" class when the "Github" filter is selected
+  $('#github').click(function() {
+    $teamArea.hide();
+    $teamArea.filter('.github').show();
+  });
+
+  // Show only the team boxes with the "matlab" class when the "Matlab" filter is selected
+  $('#matlab').click(function() {
+    $teamArea.hide();
+    $teamArea.filter('.matlab').show();
+  });
+});
+</script>
 
 <!--
 <div class="isotope fadeInLeft animated wow" style="display: flex; flex-wrap: wrap; justify-content: space-between; height: auto; padding-left: 5px;" id="portfolio_wrapper"> 
