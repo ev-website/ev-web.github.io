@@ -31,183 +31,12 @@
     }
   }
 
-/* Existing CSS */
-
-.gallery {
-  display: flex;
-  flex-wrap: nowrap; 
-  justify-content: center;
-}
-
-.gallery img {
-  width: 23%;
-  margin: 1%;
-  
-  /* Limit width on smaller screens */
-  max-width: 170px; 
-  
-  flex-shrink: 0;
-}
-
-#gallery {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-#gallery img {
-  width: 23%;
-  margin: 1%;
-  
-  /* Limit width on smaller screens */
-  max-width: 170px; 
-  
-  flex-shrink: 0;
-}
-
 @media (max-width: 768px) {
   #gallery {
     flex-wrap: wrap;
   }
 }
 
-/* Hover effect styles (appended to existing CSS) */
-
-#gallery img {
-  position: relative;
-}
-
-/* Hover effect styles */
-
-#gallery img::before {
-  content: attr(data-text) ' - ';
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5) !important;
-  color: white !important;
-  width: 100% !important;
-  padding: 4px 0 !important;
-  text-align: center !important;
-  opacity: 0 !important;
-  transition: 0.3s !important;
-}
-
-#gallery img::after {
-  content: 'Visit Link';
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  opacity: 0 !important;
-  transition: 0.3s !important;
-}
-
-#gallery img:hover {
-  filter: brightness(10%) !important;
-}
-
-#gallery img:hover::before,
-#gallery img:hover::after {
-  opacity: 1 !important;
-}
-
-
-/* Hover effect styles */
-
-/* Hover effect styles */
-
-.gallery img::before {
-  content: attr(data-text) ' - ';
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5) !important;
-  color: white !important;
-  width: 100% !important;
-  padding: 4px 0 !important;
-  text-align: center !important;
-  opacity: 0 !important;
-  transition: 0.3s !important;
-}
-
-.gallery img::after {
-  content: 'Visit Link';
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  opacity: 0 !important;
-  transition: 0.3s !important;
-}
-
-.gallery img:hover {
-  filter: brightness(10%) !important;
-}
-
-.gallery img:hover::before,
-.gallery img:hover::after {
-  opacity: 1 !important;
-}
-
-/* Caption styles */
-.caption {
-  position: absolute !important;
-  top: 100% !important;
-  left: 0 !important;
-  background: rgba(0, 0, 0, 0.5) !important;
-  color: white !important;
-  width: 100% !important;
-  padding: 4px 0 !important;
-  text-align: center !important;
-  opacity: 0 !important;
-  transition: opacity 0.3s !important;
-}
-
-  #filters {
-    text-align: center;
-  }
-
-  #filters ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  #filters ul li {
-    display: inline-block;
-    margin: 0 10px; /* Adjust this value to control the horizontal spacing */
-  }
-
-  .filters {
-    text-align: center;
-  }
-
-  .filters ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .filters ul li {
-    display: inline-block;
-    margin: 0 10px; /* Adjust this value to control the horizontal spacing */
-  }
-
-.data-container {
-  display: flex;
-  justify-content: center;
-  color: black;
-}
-
-.data-image {  
-  max-width: 25%;
-  margin: 10px;
-  border: 1px solid #ccc;
-}
-
-.data-blue {
-  background-color: blue;
-}
-
-.data-black {
-  background-color: black;  
-}
-	
   .moving-text-container {
     background-color: black;
     color: white;
@@ -228,53 +57,7 @@
   .moving-text:hover {
     animation-play-state: paused;
     color: red;
-  }
-
-  .filter-box {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  float: left;
-   /* Initially hide all boxes */
-}
-
-/* Hover effect styles */
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.image-container::before {
-  content: attr(data-text);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  padding: 4px 0;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  filter: brightness(100%);
-  transition: filter 0.3s;
-}
-
-.image-container:hover::before {
-  opacity: 1;
-}
-
-.image-container:hover img {
-  filter: brightness(10%);
-}
-
-
+  
 </style>
 
 <div class="moving-text-container" style="text-align: center;">
@@ -618,10 +401,10 @@ function filterImages(filter) {
           <li><a id="all" href="#" data-filter="*" class="active">
             <h5>All</h5>
             </a></li>
-          <li><a class="" href="#" data-filter="github">
+          <li><a class="" href="#" data-filter=".github">
             <h5>Github</h5>
             </a></li>
-          <li><a class="" href="#" data-filter="matlab">
+          <li><a class="" href="#" data-filter=".matlab">
             <h5>Matlab</h5>
             </a></li>
         </ul>
@@ -629,6 +412,7 @@ function filterImages(filter) {
     </div>
 
 <div class="team_area">
+	<div class="matlab">
         <div class="team_box wow fadeInDown delay-03s matlab">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Grey-Box.jpeg" alt="">
@@ -637,9 +421,11 @@ function filterImages(filter) {
           </ul>
         </div>
       </div>
+</div>
 
 
 <div class="team_area">
+	<div class="github">
         <div class="team_box wow fadeInDown delay-03s github">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Grey-Box.jpeg" alt="">
@@ -648,9 +434,11 @@ function filterImages(filter) {
           </ul>
         </div>
       </div>
+</div>
 
 
 <div class="team_area">
+	<div class="matlab">
         <div class="team_box wow fadeInDown delay-03s matlab">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Grey-Box.jpeg" alt="">
@@ -659,9 +447,11 @@ function filterImages(filter) {
           </ul>
         </div>
       </div>
+</div>
 
 
 <div class="team_area">
+ 	<div class="github">
         <div class="team_box wow fadeInDown delay-03s github">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
           <img src="img/Grey-Box.jpeg" alt="">
@@ -670,6 +460,7 @@ function filterImages(filter) {
           </ul>
         </div>
       </div>
+</div>
 	
 </section> -->
 
