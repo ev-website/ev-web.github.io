@@ -410,10 +410,29 @@ function filterImages(filter) {
       </div>
     </div>
 
+<div class="team_area">
+	<div class="dataset-item github">
+        <div class="team_box github">
+          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/Grey-Box.jpeg" alt="">
+          <ul class="social-icons">
+            <li><a href="https://people.njit.edu/faculty/wp24">Github</a></li>
+          </ul>
+        </div>
+</div>
+</div>
 
-<!-- <div class="isotope fadeInLeft animated wow" id="portfolio_wrapper"> -->
-
-
+<div class="team_area">
+	<div class="dataset-item matlab">
+        <div class="team_box matlab">
+          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/Grey-Box.jpeg" alt="">
+          <ul class="social-icons">
+            <li><a href="https://people.njit.edu/faculty/wp24">Github</a></li>
+          </ul>
+        </div>
+</div>
+</div>
 
 <div class="team_area">
 	<div class="dataset-item github">
@@ -438,28 +457,6 @@ function filterImages(filter) {
         </div>
 </div>
 </div>
-<!--
-<div class="team_area">
-        <div class="team_area github">
-          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Grey-Box.jpeg" alt="">
-          <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">GitHub</a></li>
-          </ul>
-        </div>
-</div>
-
-
-<div class="portfolio-item one-four   matlab isotope-item">
-        <div class="portfolio-item one-four   matlab isotope-item">
-          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Grey-Box.jpeg" alt="">
-          <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">Matlab</a></li>
-          </ul>
-        </div>
-</div> -->
-
 
 </section>
 
@@ -739,6 +736,28 @@ document.addEventListener("DOMContentLoaded", function () {
         messageContainer.classList.remove("success", "error");
       }, 5); // Delay for 5 seconds (adjust as needed)
     }, 5); // Delay for 500 milliseconds (adjust as needed)
+  });
+});
+
+$(document).ready(function() {
+  // Listen for click events on filter links
+  $('#filters ul li a').click(function() {
+    // Get the data-filter attribute value
+    var filterValue = $(this).data('filter');
+    
+    // Hide all dataset items
+    $('.dataset-item').hide();
+    
+    // Show dataset items with the selected category
+    $(filterValue).show();
+    
+    // Remove the 'active' class from all filter links
+    $('#filters ul li a').removeClass('active');
+    
+    // Add the 'active' class to the clicked filter link
+    $(this).addClass('active');
+    
+    return false; // Prevent the default link behavior
   });
 });
 
