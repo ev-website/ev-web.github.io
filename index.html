@@ -825,7 +825,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Log the category that is being filtered on
+    console.log(`Filtering on category: ${category}`);
+
+    // Log the number of elements that are being displayed
+    console.log(`Number of elements displayed: ${datasetItems.length}`);
+
   }
+});
+
 
   // Filter dataset on button click
   filterBtns.forEach(btn => {
