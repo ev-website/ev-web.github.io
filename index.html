@@ -735,6 +735,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+const filterBtns = document.querySelectorAll('#filters li a');
+	
 filterBtns.forEach(btn => {
   btn.addEventListener('click', e => {
     const category = e.target.getAttribute('data-filter');
