@@ -797,43 +797,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-// Get filter buttons
-const filterBtns = document.querySelectorAll('#filters li a');
-
-// Get dataset items
-const datasetItems = document.querySelectorAll('.dataset .team_box');
-
-// Filter function
-const filter = (category) => {
-
-  // Remove active class from buttons
-  filterBtns.forEach(btn => btn.classList.remove('active'));
-
-  // Add active class to current button
-  document.querySelector(`a[data-filter="${category}"]`).classList.add('active');
-
-  // Filter dataset items
-  datasetItems.forEach(item => {
-    if(category === '*' || item.classList.contains(category)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-
-}
-
-// Filter dataset on button click
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', e => {
-    const category = e.target.getAttribute('data-filter');
-    filter(category);
-  });
-});
-
-// Filter dataset on DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', () => {
+  // Get filter buttons
+  const filterBtns = document.querySelectorAll('#filters li a');
+
+  // Get dataset items
+  const datasetItems = document.querySelectorAll('.dataset .team_box');
+
+  // Filter function
+  const filter = (category) => {
+
+    // Remove active class from buttons
+    filterBtns.forEach(btn => btn.classList.remove('active'));
+
+    // Add active class to current button
+    const filterBtn = document.querySelector(`a[data-filter="${category}"]`);
+    if (filterBtn) {
+      filterBtn.classList.add('active');
+    }
+
+    // Filter dataset items
+    datasetItems.forEach(item => {
+      if(category === '*' || item.classList.contains(category)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+  }
+
+  // Filter dataset on button click
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', e => {
+      const category = e.target.getAttribute('data-filter');
+      filter(category);
+    });
+  });
+
+  // Filter dataset on DOMContentLoaded event
   filter('*');
 });
 	
