@@ -11,7 +11,6 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jquery-1.11.0.min.js"></script>
 
     <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
@@ -394,7 +393,7 @@ function filterImages(filter) {
 
 	      
 <div class="portfolio-top"></div>
-    <div class="dataset"> 
+    <div class="dataset-container""> 
       <div id="filters" class="sixteen columns">
         <ul class="clearfix">
           <li><a id="all" href="#" data-filter="*" class="active">
@@ -740,26 +739,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function() {
-  // Listen for click events on filter links
-  $('#filters ul li a').click(function() {
-    // Get the data-filter attribute value
-    var filterValue = $(this).data('filter');
-    
-    // Hide all dataset items
-    $('.dataset-item').hide();
-    
-    // Show dataset items with the selected category
-    $(filterValue).show();
-    
-    // Remove the 'active' class from all filter links
-    $('#filters ul li a').removeClass('active');
-    
-    // Add the 'active' class to the clicked filter link
-    $(this).addClass('active');
-    
-    return false; // Prevent the default link behavior
-  });
+    // Listen for click events on filter links
+    $('#filters ul li a').click(function() {
+        // Get the data-filter attribute value
+        var filterValue = $(this).data('filter');
+
+        // Hide all dataset items
+        $('.dataset-container .dataset-item').hide();
+
+        // Show dataset items with the selected category
+        $('.dataset-container ' + filterValue).show();
+
+        // Remove the 'active' class from all filter links
+        $('#filters ul li a').removeClass('active');
+
+        // Add the 'active' class to the clicked filter link
+        $(this).addClass('active');
+
+        return false; // Prevent the default link behavior
+    });
 });
+
 
 </script>
 
