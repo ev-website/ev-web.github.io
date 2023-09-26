@@ -833,19 +833,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 });
-
-
-  // Filter dataset on button click
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', e => {
-      const category = e.target.getAttribute('data-filter');
-      filter(category);
-    });
-  });
-
-  // Filter dataset on DOMContentLoaded event
-  filter('*');
-});
 	
 </script>
 
