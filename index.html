@@ -739,26 +739,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function() {
-    // Listen for click events on filter links
-    $('#filters ul li a').click(function() {
-        // Get the data-filter attribute value
-        var filterValue = $(this).data('filter');
-
-        // Hide all dataset items
-        $('.dataset-container .dataset-item').hide();
-
-        // Show dataset items with the selected category
-        $('.dataset-container ' + filterValue).show();
-
-        // Remove the 'active' class from all filter links
-        $('#filters ul li a').removeClass('active');
-
-        // Add the 'active' class to the clicked filter link
-        $(this).addClass('active');
-
-        return false; // Prevent the default link behavior
-    });
+  // Listen for click events on filter links within the specific section
+  $('#dataset #filters ul li a').click(function() {
+    // Get the data-filter attribute value
+    var filterValue = $(this).data('filter');
+    
+    // Hide all dataset items within the specific section
+    $('#dataset .dataset-item').hide();
+    
+    // Show dataset items with the selected category within the specific section
+    $('#dataset ' + filterValue).show();
+    
+    // Remove the 'active' class from all filter links within the specific section
+    $('#dataset #filters ul li a').removeClass('active');
+    
+    // Add the 'active' class to the clicked filter link
+    $(this).addClass('active');
+    
+    return false; // Prevent the default link behavior
+  });
 });
+
 
 
 </script>
