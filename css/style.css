@@ -1334,9 +1334,9 @@ img {
 }
 
 .item_info {
-    position: absolute;
+    /* position: absolute; */
     height: 100px;
-    width: 100%;
+    width: 239px;
     top: 50%;
     margin-top: -50px;
     text-align: center;
