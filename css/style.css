@@ -1274,6 +1274,7 @@ img {
     padding: 0;
     position: relative;
     overflow: hidden;
+    
 }
 
 .portfolio-item .portfolio_img {
@@ -1306,7 +1307,7 @@ img {
 }
 
 .item_overlay {
-    width: 100%;
+    width: 239px;
     height: 100%;
     position: absolute;
     top: 0;
