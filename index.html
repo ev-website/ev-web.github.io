@@ -18,7 +18,37 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/html5element.js"></script>
     <![endif]-->
+    <style>
+        /* Inline CSS for simplicity */
+        .portfolio-item {
+            width: calc(33.33% - 20px);
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+            background-color: gray;
+            transition: background-color 0.3s, opacity 0.3s;
+            cursor: pointer;
+        }
 
+        .portfolio-item:hover {
+            background-color: lightgray;
+        }
+
+        .portfolio-item .item-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .portfolio-item:hover .item-info {
+            opacity: 1;
+        }
+    </style>
 </head>
 <style>
  .service-box{margin-top:15px;margin-bottom:15px}.service-box .service-icon{float:left;margin-top:5px}.service-box .service-content{display: flex;  flex-direction: column; align-items: flex-start; margin-left: 7px; padding-left:48px}.service-box .service-content h4{font-size:18px;margin-bottom:10px;font-weight:700;transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out}.service-box .service-content h4 a{color:#444}.service-box .service-content h4 a:hover{color:#EB586F}
@@ -531,156 +561,67 @@ function filterImages(filter) {
 </section>
 
 <!-- Portfolio -->
-<section id="Portfolio" class="content"> 
-  
-  <!-- Container -->
-  <div class="container portfolio_title"> 
-    
-    <!-- Title -->
-    <div class="section-title">
-      <h2>Portfolio</h2>
-    </div>
-    <!--/Title --> 
-    
-  </div>
-  <!-- Container -->
-  
-  <div class="portfolio-top"></div>
-  
-  <!-- Portfolio Filters -->
-  <div class="portfolio"> 
-    
-    <div id="filters" class="sixteen columns">
-      <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>All</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".prototype">
-          <h5>Prototype</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".design">
-          <h5>Design</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".android">
-          <h5>Android</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".appleIOS">
-          <h5>Apple IOS</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".web">
-          <h5>Web App</h5>
-          </a></li>
-      </ul>
-    </div>
-    <!--/Portfolio Filters --> 
-    
-    <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>        
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">SMS Mobile App</h4>
-          </div>
+<!-- Portfolio -->
+    <section id="Portfolio" class="content">
+        <!-- Container -->
+        <div class="container portfolio_title">
+            <!-- Title -->
+            <div class="section-title">
+                <h2>Portfolio</h2>
+            </div>
+            <!--/Title -->
         </div>
+        <!-- Container -->
+
+        <div class="portfolio-top"></div>
+
+        <!-- Portfolio Filters -->
+        <div class="portfolio">
+            <div id="filters" class="sixteen columns">
+                <ul class="clearfix">
+                    <li><a id="all" href="#" data-filter="*" class="active">
+                        <h5>All</h5>
+                        </a></li>
+                    <li><a class="" href="#" data-filter=".github">
+                        <h5>Github</h5>
+                        </a></li>
+                    <li><a class="" href="#" data-filter=".matlab">
+                        <h5>Matlab</h5>
+                        </a></li>
+                </ul>
+            </div>
+            <!--/Portfolio Filters -->
+
+            <!-- Portfolio Wrapper -->
+            <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: auto;" id="portfolio_wrapper">
+                <!-- Three portfolio items in one row -->
+                <div class="portfolio-item github">
+                    <div class="item-info">
+                        <h4 class="project_name">GitHub Project 1</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item matlab">
+                    <div class="item-info">
+                        <h4 class="project_name">Matlab Project 1</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item github">
+                    <div class="item-info">
+                        <h4 class="project_name">GitHub Project 2</h4>
+                    </div>
+                </div>
+            </div>
+            <!--/Portfolio Wrapper -->
         </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item-->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Finance App</h4>
-          </div>
+        <!--/Portfolio Filters -->
+
+        <div class="portfolio_btm"></div>
+
+        <div id="project_container">
+            <div class="clear"></div>
+            <div id="project_data"></div>
         </div>
-      </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">GPS Concept</h4>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item--> 
-      
-      <!-- Portfolio Item-->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Shopping</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Managment</h4>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">iPhone</h4>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
-        <div class="item_overlay">
-          <div class="item_info"> 
-            <h4 class="project_name">Nexus Phone</h4>
-          </div>
-        </div>
-       </div>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
-        <div class="item_overlay">
-          <div class="item_info"> 
-				<h4 class="project_name">Android</h4>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item --> 
-      
-    </div>
-    <!--/Portfolio Wrapper --> 
-    
-  </div>
-  <!--/Portfolio Filters -->
-  
-  <div class="portfolio_btm"></div>
-  
-  
-  <div id="project_container">
-    <div class="clear"></div>
-    <div id="project_data"></div>
-  </div>
- 
-  
-</section>
+    </section>
 <!--/Portfolio -->
 <!--
 <div class="isotope fadeInLeft animated wow" style="display: flex; flex-wrap: wrap; justify-content: space-between; height: auto; padding-left: 5px;" id="portfolio_wrapper"> 
