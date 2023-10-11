@@ -1337,8 +1337,8 @@ img {
     /* position: absolute; */
     height: 100px;
     width: 239px;
-    top: 50%;
-    margin-top: -50px;
+    /* top: 50%;
+    margin-top: -50px; */
     text-align: center;
 }
 
