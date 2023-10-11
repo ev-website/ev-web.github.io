@@ -1340,6 +1340,9 @@ img {
     /* top: 50%;
     margin-top: -50px; */
     text-align: center;
+    display: flex; /* Add display: flex to center items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
 }
 
 .project_name {
