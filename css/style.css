@@ -598,6 +598,7 @@ a.contact_btn:hover {
     position: relative;
 }
 
+
 .Portfolio-box img {
     max-width: 100%;
     transition: all 0.3s ease-in-out;
@@ -1248,18 +1249,14 @@ img {
 
 
 
-/* Portfolio Items */	
 
 #portfolio_wrapper {
-
-    max-width: 100%;
-
-	/*
-    position: relative;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-    display: block;*/
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* Add any other styles specific to your design */
 }
 
 #portfolio_wrapper .one-third {
@@ -1274,6 +1271,7 @@ img {
     padding: 0;
     position: relative;
     overflow: hidden;
+    margin: 10px; 
     
 }
 
