@@ -426,7 +426,7 @@ transform: translateY(-50%);
 
 /* Remove the inline styles for .portfolio_img in HTML */
 .dataset-item .portfolio_img {
-  width: 100%; /* Adjust the width as needed */
+  /* width:  100%;*/ /* Adjust the width as needed */
   background-color: gray; /* Background color for the first item */
 }
 
@@ -629,12 +629,6 @@ a.contact_btn:hover {
   max-width: 100%;
 }
 
-#dataset .Portfolio_img {
-  max-width: 100%;
-}
-img {
-    max-width: 100%;
-}
 
 /* no transition on .isotope container */
 
@@ -1233,9 +1227,6 @@ img {
     text-transform: uppercase;
 }
 
-.dataset.portfolio_img {
-	max-width: 100%;
-}
 
 .section-title span {
     display: block;
@@ -1279,11 +1270,11 @@ img {
     overflow: hidden;
     display: block;
     position: relative;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .portfolio_img img {
-  max-width: 100%; /* Make images responsive by setting the max-width to 100% */
+  /*max-width: 100%; */ /* Make images responsive by setting the max-width to 100% */
   height: auto; /* Maintain the aspect ratio */
 }
 
