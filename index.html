@@ -346,187 +346,6 @@ ul.social-icons li {
 </div>
 </section>
 
-        
-<!--
-<section id="dataset" class="content">
-
-  <h1 class="data-container">DATASETS</h1>
-
-  <div id="filters">
-
-  <ul>
-    <li><a id="all" href="#" data-filter="*" class="active">All</a></li>
-    <li><a href="#" data-filter="github">Github</a></li>
-    <li><a href="#" data-filter="matlab">Matlab</a></li>
-  </ul>
-
-</div>
-
-<div id="gallery">
-  <img class="matlab" src="img/Navy_Blue.jpg" data-text="Matlab Code 1" data-link="https://www.google.com/">
-  <img class="github" src="img/Grey-Box.jpeg" data-text="Github Code 1" data-link="https://www.google.com/">
-  <img class="matlab" src="img/Navy_Blue.jpg" data-text="Matlab Code 2" data-link="https://www.google.com/">
-  <img class="github" src="img/Grey-Box.jpeg" data-text="Github Code 2" data-link="https://www.google.com/">
-</div> 
-
-</section>
-
-<script>
-
-const galleryImages = document.querySelectorAll('#gallery img');
-
-galleryImages.forEach(img => {
-  img.addEventListener('mouseover', () => {
-    const text = img.getAttribute('data-text');
-    const caption = document.createElement('div');
-    caption.className = 'caption';
-    caption.textContent = text;
-    img.insertAdjacentElement('afterend', caption);
-  });
-
-  img.addEventListener('mouseout', () => {
-    const caption = img.parentElement.querySelector('.caption');
-    if (caption) {
-      caption.remove();
-    }
-  });
-});
-
-  // Get filter links
-const filters = document.querySelectorAll('#filters a');
-
-// Filter images on click
-filters.forEach(link => {
-
-  link.addEventListener('click', () => {
-
-    let filter = link.getAttribute('data-filter');
-    
-    filterImages(filter);
-
-    link.classList.add('active');
-  });
-
-});
-
-function filterImages(filter) {
-
-  let images = document.querySelectorAll('#gallery img');
-
-  images.forEach(image => {
-
-    if (filter === '*') {
-      image.style.display = 'block';
-    } else if (image.classList.contains(filter)) { 
-      image.style.display = 'block';
-    } else {
-      image.style.display = 'none';
-    }
-
-  });
-
-}
-</script>
-
-<section id="dataset" class="content"> 
-  <div class="container">
-    <div class="container portfolio_title"> 
-      <div class="section-title">
-        <h2>Datasets</h2>
-      </div>
-    </div>
-
-	      
-<div class="portfolio-top"></div>
-    <div class="dataset-container""> 
-      <div id="filters" class="sixteen columns">
-        <ul class="clearfix">
-          <li><a id="all" href="#" data-filter="*" class="active">
-            <h5>All</h5>
-            </a></li>
-          <li><a href="#" data-filter=".github">
-            <h5>Github</h5>
-            </a></li>
-          <li><a href="#" data-filter=".matlab">
-            <h5>Matlab</h5>
-            </a></li>
-        </ul>
-      </div>
-    </div>
-
-<div class="team_area">
-    <div class="dataset-item github">
-        <div class="team_box github">
-            <div class="team_box_shadow">
-                <a href="https://people.njit.edu/faculty/wp24">
-                    <img src="img/Grey-Box.jpeg" alt="">
-                    <div class="centered-text">Github 1</div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-	  
-<div class="team_area">
-	<div class="dataset-item github">
-        <div class="team_box github">
-          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Grey-Box.jpeg" alt="">
-          <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">Github 1</a></li>
-          </ul>
-        </div>
-</div>
-</div>
-
-<div class="team_area">
-	<div class="dataset-item matlab">
-        <div class="team_box matlab">
-          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Grey-Box.jpeg" alt="">
-          <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">Matlab 1</a></li>
-	<li><br></li>
-	      <li><br></li>
-	<li><br></li>
-	      <li><br></li>
-	<li><br></li>
-	      <li><br></li>
-          </ul>
-        </div>
-</div>
-</div>
-
-<div class="team_area">
-	<div class="dataset-item github">
-        <div class="team_box github">
-          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Grey-Box.jpeg" alt="">
-          <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">Github 2</a></li>
-            <li><br></li>
-	      <li><br></li>
-          </ul>
-        </div>
-</div>
-</div>
-
-<div class="team_area">
-	<div class="dataset-item matlab">
-        <div class="team_box matlab">
-          <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/Grey-Box.jpeg" alt="">
-          <ul class="social-icons">
-            <li><a href="https://people.njit.edu/faculty/wp24">Matlab 2</a></li>
-	    <li><br></li>
-	      <li><br></li>
-          </ul>
-        </div>
-</div>
-</div>
-
-</section>
 
 -->
 <!-- Portfolio -->
@@ -565,18 +384,17 @@ function filterImages(filter) {
     <!--/Portfolio Filters --> 
     
     <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow portfolio-container" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
+    <div class="isotope fadeInLeft animated wow portfolio-container" style="position: 100%; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
       
-      <!-- Portfolio Item -->
-      <div style="position: relative; left: 10%; top: 0; width: 30%; opacity: 1;" class="portfolio-item one-third github isotope-item">
-  <div class="portfolio_img" style="width:100%; height: auto;"><img src="img/Box.jpg" alt="Portfolio 1"></div>
-  <div class="item_overlay">
-    <div class="item_info">
-      <a class="project_name" href="https://www.google.com/">Github I</a>
-    </div>
-  </div>
-</div>
-
+        <!-- Portfolio Item -->
+      <div style="position: relative; left: 30px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 239px; opacity: 1;" class="portfolio-item one-third  github isotope-item">
+        <div class="portfolio_img" style="width:239px; height: 265px;"> <img src="img/Box.jpg" alt="Portfolio 1"> </div>     
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <a class="project_name" href="https://www.google.com/">Github I</a>
+          </div>
+        </div>
+        </div>
       <!--/Portfolio Item --> 
       
       <!-- Portfolio Item-->
