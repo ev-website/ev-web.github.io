@@ -401,54 +401,6 @@ transform: translateY(-50%);
     color: #888888;
     margin: 0px;
 }
-	
-/* New Dataset class added */
-
-/* New classes for datasets with different names */
-.dataset-items {
-  display: flex;
-}
-
-.dataset-item {
-  width: 33.33%; /* Adjust the width as needed for three items in a row */
-  margin-bottom: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Update the styles for the new classes */
-.dataset-item .team_section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Remove the inline styles for .portfolio_img in HTML */
-.dataset-item .portfolio_img {
-  /* width:  100%;*/ /* Adjust the width as needed */
-  background-color: gray; /* Background color for the first item */
-}
-
-.dataset-item .portfolio-img:nth-child(2) {
-  background-color: navy; /* Background color for the second item */
-}
-
-.dataset-item .portfolio-img:nth-child(3) {
-  background-color: gray; /* Background color for the third item */
-}
-
-/* Update the styles for .project_name */
-.dataset-item .project_name {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-/* Additional styles for item_overlay and item_info as needed */
-
-/* Update the styles for filters if necessary */
-
-
 /* Latest Work
 ---------------------------------*/
 
@@ -1260,14 +1212,15 @@ a.contact_btn:hover {
 }
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center align the items horizontally */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; /* Center align the items horizontally */
 }
 
 .portfolio-item {
-    width: calc(25% - 20px); /* Adjust the width and add margin between items */
-    margin: 10px; /* Add margin between items */
+    width: calc(25% - 20px) !important; /* Adjust the width and add margin between items */
+    margin: 10px !important; /* Add margin between items */
+    text-align: center !important; /* Center the content within each item */
 }
 
 .portfolio-item .portfolio_img {
@@ -1277,9 +1230,13 @@ a.contact_btn:hover {
     /* max-width: 100%; */
 }
 
+.portfolio_img {
+    max-width: 100% !important;
+}
+
 .portfolio_img img {
-  max-width: 100%; /* Make images responsive by setting the max-width to 100% */
-  height: auto; /* Maintain the aspect ratio */
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 .portfolio-item:hover .item_overlay {
