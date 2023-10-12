@@ -1212,15 +1212,15 @@ a.contact_btn:hover {
 }
 
 .portfolio {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important; /* Center align the items horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the items horizontally */
 }
 
 .portfolio-item {
-    width: calc(25% - 20px) !important; /* Adjust the width and add margin between items */
-    margin: 10px !important; /* Add margin between items */
-    text-align: center !important; /* Center the content within each item */
+    width: calc(25% - 20px); /* Adjust the width and add margin between items */
+    margin: 10px; /* Add margin between items */
+    text-align: center; /* Center the content within each item */
 }
 
 .portfolio-item .portfolio_img {
@@ -1230,13 +1230,9 @@ a.contact_btn:hover {
     /* max-width: 100%; */
 }
 
-.portfolio_img {
-    max-width: 100% !important;
-}
-
 .portfolio_img img {
-    max-width: 100% !important;
-    height: auto !important;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-item:hover .item_overlay {
