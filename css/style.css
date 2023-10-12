@@ -582,6 +582,7 @@ a.contact_btn:hover {
 }
 
 .portfolioContainer {
+    max-width: 100%;
     position: relative;
     margin: 0 auto;
     padding-left: 15px;
@@ -1258,12 +1259,15 @@ a.contact_btn:hover {
     position: relative;
 }
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the items horizontally */
+}
+
 .portfolio-item {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    margin: 10px; 
-    
+    width: calc(25% - 20px); /* Adjust the width and add margin between items */
+    margin: 10px; /* Add margin between items */
 }
 
 .portfolio-item .portfolio_img {
