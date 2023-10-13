@@ -73,13 +73,13 @@ a, a:hover, a:active {
   margin: 0 auto;
   padding: 0;
   max-width: 100% !important;
+  display: block;
 }
 
 .box {
-  max-width: 30%;
-  width: 100%; /* Add this to ensure responsiveness */
+  width: 250px;
   min-height: 160px;
-  margin: 5px;
+  margin: 5px 5px 20px 5px;
   background-color: #ccc;
   display: flex;
   justify-content: center;
