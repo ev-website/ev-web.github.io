@@ -68,14 +68,14 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 5px; /* Set a fixed height in pixels */
+  height: 300px; /* Set a fixed height in pixels */
   margin: 0;
   padding: 0;
 }
 
 .box {
   width: 250px;
-  height: 5px;
+  height: 300px;
   margin: 5px; /* Adjust margin for spacing */
   background-color: #ccc;
   display: flex;
