@@ -72,12 +72,13 @@ a, a:hover, a:active {
   width: 100%; /* Set container width to 100% of the parent */
   margin: 0;
   padding: 0;
+  max-width: 100%; /* Add max-width to limit the container's width */
 }
 
 .box {
-  width: calc(25% - 20px); /* 25% for 4 boxes in a row, subtracting margins */
+  width: calc(25% - 2%); /* 25% for 4 boxes in a row, subtracting margins */
   min-height: 60px;
-  margin: 2%; /* Using a percentage margin for spacing */
+  margin: 1%; /* Using a percentage margin for spacing */
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -86,6 +87,7 @@ a, a:hover, a:active {
   transition: background-color 0.3s;
   overflow: hidden;
   padding: 0;
+  box-sizing: border-box; /* Include padding and borders in width calculations */
 }
 
 
