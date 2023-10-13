@@ -127,11 +127,11 @@ a, a:hover, a:active {
 }
 
 .github {
-  background-color: #fff; / Light gray color /
+  background-color: lightgray; /* Light gray color */
 }
 
 .matlab {
-  background-color: #bbb; / Slightly darker light gray */
+  background-color: lightblue; /* Light blue color */
 }
 
 
