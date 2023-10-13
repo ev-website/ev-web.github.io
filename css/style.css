@@ -63,6 +63,43 @@ a, a:hover, a:active {
     justify-content: center;
 }
 
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.box-content {
+  text-align: center;
+  padding: 10px;
+}
+
+.box-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
 /* Styles
 ---------------------------------*/
 body {
