@@ -87,6 +87,11 @@ a, a:hover, a:active {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .box {
+    width: calc(25% - 20px); /* 33.33% for 3 boxes in a row, minus margins */
+  }
+}
 
 .box:hover {
   background-color: #FF6666;
