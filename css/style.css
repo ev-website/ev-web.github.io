@@ -69,10 +69,10 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Set container width to 100% of the parent */
+  width: 60%; /* Set container width to 100% of the parent */
   margin: 0;
   padding: 0;
-  max-width: 100%; /* Add max-width to limit the container's width */
+  max-width: 60%; /* Add max-width to limit the container's width */
 }
 
 .box {
