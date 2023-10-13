@@ -67,14 +67,16 @@ a, a:hover, a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  height: 320px; /* Set a fixed height in pixels */
   margin: 0;
-  padding: 20px; /* Add padding to the container for spacing */
+  padding: 0;
 }
 
 .box {
   width: 250px;
   height: 320px;
-  margin: 0 10px 20px 0; /* Adjust margin for spacing, add 20px bottom margin */
+  margin: 5px 5px 20px 5px; / Adjust margin for spacing, add 20px bottom margin /
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -85,7 +87,7 @@ a, a:hover, a:active {
   padding: 0;
 }
 
-/* Add styles for the hover effect */
+
 .box:hover {
   background-color: #FF6666;
   color: #fff;
@@ -103,14 +105,12 @@ a, a:hover, a:active {
 }
 
 .github {
-  background-color: #ccc; /* Light gray color */
+  background-color: #ccc; / Light gray color /
 }
 
 .matlab {
-  background-color: #bbb; /* Slightly darker light gray */
+  background-color: #bbb; / Slightly darker light gray */
 }
-
-
 
 /* Styles
 ---------------------------------*/
