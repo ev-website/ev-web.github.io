@@ -63,10 +63,11 @@ a, a:hover, a:active {
     justify-content: center;
 }
 
+
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* Change to space-between */
   align-items: center;
   margin: 0;
   padding: 20px; /* Add padding to the container for spacing */
@@ -110,7 +111,6 @@ a, a:hover, a:active {
 .matlab {
   background-color: #bbb; /* Slightly darker light gray */
 }
-
 
 
 /* Styles
