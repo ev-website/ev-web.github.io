@@ -75,8 +75,9 @@ a, a:hover, a:active {
 }
 
 .box {
-  flex: 0 0 calc(33.33% - 20px); /* 33.33% for 3 boxes in a row, minus margins */
-  min-height: 60px;
+  flex: 0 0 calc(60px + 20px); /* Fixed width of 60px for each box, plus margins */
+  width: 60px;
+  height: 60px;
   margin: 10px;
   background-color: #ccc;
   display: flex;
@@ -91,13 +92,13 @@ a, a:hover, a:active {
 
 @media screen and (max-width: 768px) {
   .box {
-    flex: 0 0 calc(50% - 20px); /* 50% for 2 boxes in a row on smaller screens */
+    flex: 0 0 calc(60px + 20px); /* Fixed width of 60px for each box, plus margins */
   }
 }
 
 @media screen and (max-width: 480px) {
   .box {
-    flex: 0 0 calc(100% - 20px); /* 100% for 1 box per row on even smaller screens */
+    flex: 0 0 calc(60px + 20px); /* Fixed width of 60px for each box, plus margins */
   }
 }
 
