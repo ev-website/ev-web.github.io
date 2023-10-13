@@ -346,7 +346,6 @@ ul.social-icons li {
 </div>
 </section>
 
-
 <section id="dataset" class="content"> 
   <div class="container portfolio_title"> 
     <div class="section-title">
@@ -372,8 +371,9 @@ ul.social-icons li {
     </div>
   </div>
 
+
 <div class="box-container">
-  <div class="portfolio-item one-third github isotope-item">
+  <div class="box github-box github">
     <a href="#github-link1" class="box-link">
       <div class="box-content">
         <h3>Github 1</h3>
@@ -381,7 +381,7 @@ ul.social-icons li {
     </a>
   </div>
 
-  <div class="portfolio-item one-third github isotope-item">
+  <div class="box github-box github">
     <a href="#github-link2" class="box-link">
       <div class="box-content">
         <h3>Github 2</h3>
@@ -389,7 +389,7 @@ ul.social-icons li {
     </a>
   </div>
 
-  <div class="portfolio-item one-third matlab isotope-item">
+  <div class="box matlab-box matlab">
     <a href="#matlab-link1" class="box-link">
       <div class="box-content">
         <h3>Matlab 1</h3>
@@ -397,7 +397,7 @@ ul.social-icons li {
     </a>
   </div>
 
-  <div class="portfolio-item one-third matlab isotope-item">
+  <div class="box matlab-box matlab">
     <a href="#matlab-link2" class="box-link">
       <div class="box-content">
         <h3>Matlab 2</h3>
@@ -406,6 +406,7 @@ ul.social-icons li {
   </div>
 </div>
 </section>
+
 	
 <!-- Portfolio -->
 <section id="datasets" class="content"> 
@@ -741,6 +742,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var j = jQuery.noConflict();
+
+j(document).ready(function() {
+  j('.portfolio li a').click(function() {
+    var filterValue = j(this).attr('data-filter');
+    j('.box').hide();
+    j(filterValue).show();
+  });
+});
+
+/*
+var j = jQuery.noConflict();
 j(document).ready(function () {
   // Listen for click events on filter links within the specific section
   j('#filters ul li a').click(function () {
@@ -762,8 +774,7 @@ j(document).ready(function () {
     return false; // Prevent the default link behavior
   });
 });
-
-
+*/
 </script>
 
 <style>
