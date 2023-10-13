@@ -634,8 +634,12 @@ var j = jQuery.noConflict();
 j(document).ready(function() {
   j('.portfolio li a').click(function() {
     var filterValue = j(this).attr('data-filter');
-    j('.box').hide();
-    j(filterValue).show();
+    if (filterValue === '*') {
+      j('.box').show();
+    } else {
+      j('.box').hide();
+      j(filterValue).show();
+    }
   });
 });
 
