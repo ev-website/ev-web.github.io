@@ -65,10 +65,10 @@ a, a:hover, a:active {
 
 .box-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0; /* Remove margin */
 }
 
 .box {
@@ -81,16 +81,7 @@ a, a:hover, a:active {
   align-items: center;
   position: relative;
   transition: background-color 0.3s;
-}
-
-.github {
-  background-color: black; /* Change the color for Github boxes */
-  color: white;
-}
-
-.matlab {
-  background-color: blue; /* Change the color for Matlab boxes */
-  color: white;
+  overflow: hidden;
 }
 
 .box:hover {
@@ -107,6 +98,14 @@ a, a:hover, a:active {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+.github {
+  background-color: black;
+}
+
+.matlab {
+  background-color: blue;
 }
 
 /* Styles
