@@ -601,9 +601,9 @@ a.contact_btn:hover {
 }
 
 .portfolio-item {
-    width: 24%; /* Adjust the width and add margin between items */
-    margin: 1%; /* Add margin between items */
-    text-align: center; /* Center the content within each item */
+    width: 24% !important; /* Adjust the width and add margin between items */
+    margin: 1% !important; /* Add margin between items */
+    text-align: center !important; /* Center the content within each item */
 }
 
 .portfolio-item .portfolio_img {
@@ -626,10 +626,10 @@ a.contact_btn:hover {
 }
 
 .portfolioContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center all text within the portfolio items */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; /* Center horizontally */
+    text-align: center !important; /* Center all text within the portfolio items */
 }
 
 /*
