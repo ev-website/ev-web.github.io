@@ -743,28 +743,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var j = jQuery.noConflict();
-j(document).ready(function() {
+j(document).ready(function () {
   // Listen for click events on filter links within the specific section
-  j('#dataset #filters ul li a').click(function() {
+  j('#filters ul li a').click(function () {
     // Get the data-filter attribute value
     var filterValue = j(this).data('filter');
-    
+
     // Hide all dataset items within the specific section
-    j('#dataset .dataset-item').hide();
-    
+    j('.dataset-item').hide();
+
     // Show dataset items with the selected category within the specific section
     j('#dataset ' + filterValue).show();
-    
+
     // Remove the 'active' class from all filter links within the specific section
-    j('#dataset #filters ul li a').removeClass('active');
-    
+    j('#filters ul li a').removeClass('active');
+
     // Add the 'active' class to the clicked filter link
     j(this).addClass('active');
-    
+
     return false; // Prevent the default link behavior
   });
 });
-
 
 
 </script>
