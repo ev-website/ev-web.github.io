@@ -68,15 +68,15 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 320px; 
+  height: auto; /* Set height to auto for relative height */
   margin: 0;
   padding: 0;
 }
 
 .box {
   width: 250px;
-  height: 320px;
-  margin: 5px 5px 20px 5px; 
+  height: auto; /* Set height to auto for relative height */
+  margin: 5px 5px 20px 5px; /* Adjust margin for spacing, add 20px bottom margin */
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -86,6 +86,7 @@ a, a:hover, a:active {
   overflow: hidden;
   padding: 0;
 }
+
 
 
 .box:hover {
