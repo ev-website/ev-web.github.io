@@ -69,17 +69,16 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 100% !important;
-  display: block;
+  margin: 0;
+  padding: 10px; /* Add padding for spacing */
+  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
 }
 
 .box {
-  width: 250px;
-  min-height: 160px;
-  margin: 5px 5px 20px 5px;
+  max-width: 100%; 
+  width: calc(25% - 20px); /* 25% for 4 boxes in a row, minus margins */
+  min-height: 60px;
+  margin: 10px; /* Margin for spacing */
   background-color: #ccc;
   display: flex;
   justify-content: center;
