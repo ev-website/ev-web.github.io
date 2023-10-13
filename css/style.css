@@ -601,8 +601,8 @@ a.contact_btn:hover {
 }
 
 .portfolio-item {
-    width: calc(25% - 20px); /* Adjust the width and add margin between items */
-    margin: 10px; /* Add margin between items */
+    width: 24%; /* Adjust the width and add margin between items */
+    margin: 1%; /* Add margin between items */
     text-align: center; /* Center the content within each item */
 }
 
@@ -625,11 +625,11 @@ a.contact_btn:hover {
     margin: 0 10px;
 }
 
-/* Add this rule to center the portfolio items in the middle */
 .portfolioContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center horizontally */
+    text-align: center; /* Center all text within the portfolio items */
 }
 
 /*
