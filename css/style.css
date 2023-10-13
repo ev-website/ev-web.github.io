@@ -72,14 +72,14 @@ a, a:hover, a:active {
   height: auto;
   margin: 0 auto;
   padding: 0;
-  max-width: 60% !important;
-  display: block;
+  max-width: 100% !important;
 }
 
 .box {
-  width: 250px;
+  max-width: 60%;
+  width: 100%; /* Add this to ensure responsiveness */
   min-height: 160px;
-  margin: 5px 5px 20px 5px;
+  margin: 5px;
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -90,10 +90,11 @@ a, a:hover, a:active {
   padding: 0;
 }
 
+
 /*
 .box-container::after {
   content: '';
-  flex: auto; /* Add a pseudo element that takes remaining space */
+  flex: auto; /* Add a pseudo element that takes remaining space
 }
 */
 
