@@ -68,7 +68,7 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 320px; /* Set a fixed height in pixels */
+  height: 320px; 
   margin: 0;
   padding: 0;
 }
@@ -76,7 +76,7 @@ a, a:hover, a:active {
 .box {
   width: 250px;
   height: 320px;
-  margin: 5px 5px 20px 5px; / Adjust margin for spacing, add 20px bottom margin /
+  margin: 5px 5px 20px 5px; 
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -111,6 +111,7 @@ a, a:hover, a:active {
 .matlab {
   background-color: #bbb; / Slightly darker light gray */
 }
+
 
 /* Styles
 ---------------------------------*/
