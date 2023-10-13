@@ -75,7 +75,7 @@ a, a:hover, a:active {
 }
 
 .box {
-  flex: 0 0 calc(300px + 20px); /* Fixed width of 200px for each box, plus margins */
+  flex: 0 0 calc(300px + 20px); /* Fixed width of 300px for each box, plus margins */
   width: 300px;
   height: 250px;
   margin: 15px;
@@ -93,17 +93,18 @@ a, a:hover, a:active {
 @media screen and (max-width: 768px) {
   .box {
     flex: 0 0 calc(100% - 20px); /* 100% for 1 box per row on smaller screens */
-    width: 100%;
+    width: calc(100% - 30px); /* Adjust width and margin to center-align */
+    margin: 15px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .box {
     flex: 0 0 calc(100% - 20px); /* 100% for 1 box per row on even smaller screens */
-    width: 100%;
+    width: calc(100% - 30px); /* Adjust width and margin to center-align */
+    margin: 15px;
   }
 }
-
 
 
 /*
