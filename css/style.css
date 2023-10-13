@@ -67,8 +67,9 @@ a, a:hover, a:active {
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  width: 100%; /* Set container width to 100% of the parent */
   margin: 0;
   padding: 0;
 }
@@ -76,7 +77,7 @@ a, a:hover, a:active {
 .box {
   width: calc(25% - 20px); /* 25% for 4 boxes in a row, subtracting margins */
   min-height: 60px;
-  margin: 5px;
+  margin: 2%; /* Using a percentage margin for spacing */
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -86,6 +87,7 @@ a, a:hover, a:active {
   overflow: hidden;
   padding: 0;
 }
+
 
 
 /*
