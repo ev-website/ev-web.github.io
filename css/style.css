@@ -71,6 +71,7 @@ a, a:hover, a:active {
   height: auto;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 .box {
@@ -87,11 +88,13 @@ a, a:hover, a:active {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  .box {
-    width: calc(25% - 20px); /* 33.33% for 3 boxes in a row, minus margins */
-  }
+/*
+.box-container::after {
+  content: '';
+  flex: auto; /* Add a pseudo element that takes remaining space */
 }
+*/
+
 
 .box:hover {
   background-color: #FF6666;
