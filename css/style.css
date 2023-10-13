@@ -68,15 +68,15 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Set it back to 100vh */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  height: 5px; /* Set a fixed height in pixels */
+  margin: 0;
+  padding: 0;
 }
 
 .box {
-  width: 150px;
-  height: 150px; /* Adjust the height */
-  margin: 10px;
+  width: 250px;
+  height: 5px;
+  margin: 5px; /* Adjust margin for spacing */
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -84,11 +84,11 @@ a, a:hover, a:active {
   position: relative;
   transition: background-color 0.3s;
   overflow: hidden;
-  padding: 0; /* Remove padding */
+  padding: 0;
 }
 
 .box:hover {
-  background-color: #FF3333;
+  background-color: #FF6666;
   color: #fff;
 }
 
@@ -104,11 +104,11 @@ a, a:hover, a:active {
 }
 
 .github {
-  background-color: black;
+  background-color: #eee; /* Light gray color */
 }
 
 .matlab {
-  background-color: #333;
+  background-color: #ddd; /* Slightly darker light gray */
 }
 
 
