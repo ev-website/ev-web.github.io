@@ -68,12 +68,14 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 1vh;
+  height: 100vh; /* Set it back to 100vh */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
 }
 
 .box {
   width: 150px;
-  height: 10px;
+  height: 150px; /* Adjust the height */
   margin: 10px;
   background-color: #ccc;
   display: flex;
@@ -82,6 +84,7 @@ a, a:hover, a:active {
   position: relative;
   transition: background-color 0.3s;
   overflow: hidden;
+  padding: 0; /* Remove padding */
 }
 
 .box:hover {
@@ -107,6 +110,7 @@ a, a:hover, a:active {
 .matlab {
   background-color: #333;
 }
+
 
 /* Styles
 ---------------------------------*/
