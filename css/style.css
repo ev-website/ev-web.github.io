@@ -14,10 +14,6 @@ Do not remove the back-link in this web template
 /* Reset
 ---------------------------------*/
 
-body {
-    font-family: "Montserrat", sans-serif;
-}
-
 ul {
     list-style: none;
 }
@@ -115,14 +111,6 @@ a, a:hover, a:active {
 }
 
 
-/*
-.box-container::after {
-  content: '';
-  flex: auto; /* Add a pseudo element that takes remaining space
-}
-*/
-
-
 .box:hover {
   background-color: #FF6666;
   color: #fff;
@@ -148,11 +136,8 @@ a, a:hover, a:active {
 }
 
 
-/* Styles
----------------------------------*/
 body {
     background: #fff;
-    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #888888;
@@ -322,6 +307,7 @@ aboutUs {
 .mrgTop {
     margin-top: 30px;
 }
+
 /* Top_content
 ---------------------------------*/
 
@@ -429,8 +415,6 @@ transform: translateY(-50%);
 }
 
 
-
-
 /* Services
 ---------------------------------*/
 
@@ -439,9 +423,6 @@ transform: translateY(-50%);
     background: #EFEFEF;
 }
 
-
-.service_section {
-}
 
 .service_icon {
     width: 90px;
@@ -717,170 +698,6 @@ a.contact_btn:hover {
     text-align: center !important; /* Center all text within the portfolio items */
 }
 
-/*
-
-#Portfolio {
-    padding: 60px 0px;
-    position: relative;
-}
-
-.Portfolio-nav {
-    padding: 0;
-    margin: 0 0 45px 0;
-    list-style: none;
-    text-align: center;
-}
-
-.Portfolio-nav li {
-    margin: 0 10px;
-    display: inline;
-}
-
-.Portfolio-nav li a {
-    display: inline-block;
-    padding: 10px 22px;
-    font-size: 12px;
-    line-height: 20px;
-    color: #222222;
-    border-radius: 4px;
-    text-transform: uppercase;
-    background: #f7f7f7;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    position: relative;
-}
-
-.Portfolio-nav li a:hover {
-    background: #df0031;
-    color: #fff;
-    text-decoration: none;
-}
-
-.portfolioContainer {
-    max-width: 100%;
-    position: relative;
-    margin: 0 auto;
-    padding-left: 15px;
-    width: auto !important;
-}
-
-.Portfolio-box {
-    text-align: center;
-    width: 265px;
-    overflow: hidden;
-    float: left;
-    padding: 12px 0px;
-    position: relative;
-}
-
-
-.Portfolio-box img {
-    max-width: 100%;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    position: relative;
-}
-
-.Portfolio-box img:hover {
-    opacity: 0.6;
-}
-
-.Portfolio-nav li a.current {
-    background: #df0031;
-    color: #fff;
-    text-decoration: none;
-}
-	
-.container.portfolio_title {
-    padding-bottom: 0px;
-}
-
-#portfolio {
-    padding: 60px 0 40px;
-}
-
-#portfolio_wrapper {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center; 
-
-}
-
-#portfolio_wrapper .one-third {
-    margin: 0!important;
-    line-height: 0;
-    width: 33%;
-    padding: 0;
-    position: relative;
-}
-
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-
-.portfolio-item {
-    width: calc(25% - 20px); 
-    margin: 10px; 
-    text-align: center; 
-}
-
-.portfolio-item .portfolio_img {
-    overflow: hidden;
-    display: block;
-    position: relative;
-}
-
-.portfolio_img img {
-    max-width: 100%;
-    height: auto;
-}
-
-.portfolio-item:hover .item_overlay {
-    opacity: 1;
-    transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -webkit-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-}
-
-
-.portfolio-item:hover .project_name {
-    opacity: 1;
-    -webkit-transition: opacity .1s .2s;
-    -moz-transition: opacity .1s .2s;
-    -ms-transition: opacity .1s .2s;
-    -o-transition: opacity .1s .2s;
-    transition: opacity .1s .2s;
-}
-
-
-.portfolio-item:hover .project_catg {
-    opacity: 0.8;
-    -webkit-transition: opacity .1s .2s;
-    -moz-transition: opacity .1s .2s;
-    -ms-transition: opacity .1s .2s;
-    -o-transition: opacity .1s .2s;
-    transition: opacity .1s .2s;
-}
-.portfolio-item:hover .zoom-icon {
-    opacity: 1;
-    margin-top: 0px;
-    -webkit-transition: opacity .3s .2s, margin-top .3s .2s;
-    -moz-transition: opacity .3s .2s, margin-top .3s .2s;
-    -ms-transition: opacity .3s .2s, margin-top .3s .2s;
-    -o-transition: opacity .3s .2s, margin-top .3s .2s;
-    transition: opacity .3s .2s, margin-top .3s .2s;
-}
-
-*/
 
 .isotope .isotope-item {
   /* change duration value to whatever you like */
@@ -1071,11 +888,11 @@ a.contact_btn:hover {
     height: 100%;
     border-bottom: 4px solid #df0031;
 }
-<!--
+
 .team_box:hover .team_box_shadow {
     box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0);
 }
--->
+
 
 .team_box:hover ul {
     display: block;
