@@ -67,18 +67,17 @@ a, a:hover, a:active {
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
+  height: 320px; 
   margin: 0;
-  padding: 10px;
-  max-width: 1000px;
+  padding: 0;
 }
 
 .box {
-  flex: 0 0 calc(300px + 20px); /* Fixed width of 300px for each box, plus margins */
-  width: 300px;
-  height: 250px;
-  margin: 15px;
+  width: 250px;
+  height: 320px;
+  margin: 5px 5px 20px 5px; 
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -87,23 +86,31 @@ a, a:hover, a:active {
   transition: background-color 0.3s;
   overflow: hidden;
   padding: 0;
-  box-sizing: border-box; /* Ensure padding is included in the box size */
 }
 
-@media screen and (max-width: 768px) {
-  .box {
-    flex: 0 0 calc(100% - 20px); /* 100% for 1 box per row on smaller screens */
-    width: calc(100% - 30px); /* Adjust width and margin to center-align */
-    margin: 15px;
-  }
+
+.box:hover {
+  background-color: #FF6666;
+  color: #fff;
 }
 
-@media screen and (max-width: 480px) {
-  .box {
-    flex: 0 0 calc(100% - 20px); /* 100% for 1 box per row on even smaller screens */
-    width: calc(100% - 30px); /* Adjust width and margin to center-align */
-    margin: 15px;
-  }
+.box-content {
+  text-align: center;
+  padding: 10px;
+}
+
+.box-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.github {
+  background-color: #ccc; / Light gray color /
+}
+
+.matlab {
+  background-color: #bbb; / Slightly darker light gray */
 }
 
 
