@@ -76,7 +76,7 @@ a, a:hover, a:active {
 
 .box {
   width: calc(33.33% - 20px); /* 25% for 4 boxes in a row, minus margins */
-  min-height: 60px !important;
+  min-height: 160px !important;
   margin: 10px; /* Margin for spacing */
   background-color: #ccc;
   display: flex;
