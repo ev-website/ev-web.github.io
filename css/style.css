@@ -878,7 +878,7 @@ a.contact_btn:hover {
 }
 
 .team_box:hover .team_box_shadow {
-    box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0);
+    box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,1);
 }
 
 
