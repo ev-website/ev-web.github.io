@@ -1,18 +1,5 @@
-/*
-Author URI: http://webthemez.com/
-Note: 
-Licence under Creative Commons Attribution 3.0 
-Do not remove the back-link in this web template 
--------------------------------------------------------*/
 
 @charset "utf-8";
-/*
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
-*/
-
-/* Reset
----------------------------------*/
 
 ul {
     list-style: none;
@@ -1354,11 +1341,7 @@ a.contact_btn:hover {
     transition-duration: 0s;
 }
 
-
-
 /* Portfolio Expander */	
-
-
 
 #project_container {
     display: none;
@@ -1492,9 +1475,7 @@ a.contact_btn:hover {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-	
 
-/*insert here*/
 
 div.mc-image {
     -webkit-transition: opacity 1s ease-in-out;
