@@ -867,7 +867,7 @@ a.contact_btn:hover {
     height: 62px;
     z-index: 10;
     bottom: 0px;
-	
+    box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, 0.3); /* Adjust the color and alpha value here */
 }
 
 .team_box_shadow a {
@@ -878,7 +878,8 @@ a.contact_btn:hover {
 }
 
 .team_box:hover .team_box_shadow {
-    box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,1);
+    /*box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,1);*/
+    box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, 0.3); /* Adjust the color and alpha value here */
 }
 
 
