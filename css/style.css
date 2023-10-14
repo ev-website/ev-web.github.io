@@ -75,9 +75,9 @@ a, a:hover, a:active {
 }
 
 .box {
-  width: 250px;
-  min-height: 150px; /* Set height to auto for relative height */
-  margin: 5px 5px 20px 5px; /* Adjust margin for spacing, add 20px bottom margin */
+  width: 260px;
+  min-height: 160px; /* Set height to auto for relative height */
+  margin: 15px 20px 15px 20px; /* Adjust margin for spacing, add 20px bottom margin */
   background-color: #ccc;
   display: flex;
   justify-content: center;
