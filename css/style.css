@@ -65,20 +65,19 @@ a, a:hover, a:active {
 
 
 .box-container {
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 320px; 
   margin: 0;
-  padding: 10px; /* Add padding for spacing */
-  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
+  padding: 0;
 }
 
 .box {
-  width: calc(33.33% - 20px); /* 25% for 4 boxes in a row, minus margins */
-  min-height: 60px !important;
-  margin: 10px; /* Margin for spacing */
+  width: 280px;
+  height: 320px;
+  margin: 5px 5px 20px 5px; 
   background-color: #ccc;
   display: flex;
   justify-content: center;
