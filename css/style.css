@@ -69,8 +69,8 @@ a, a:hover, a:active {
   flex-wrap: wrap;
   justify-content: center; /* Horizontally center-align the boxes */
   align-items: center; /* Vertically center-align the boxes */
-  margin: 2% 20% 0 20%; /* Add a left margin of 30% */
-  padding: 10px; /* Add padding for spacing */
+  margin: 2% 30% 2% 30%; /* Add a left margin of 30% */
+  padding: 10px !important; /* Add padding for spacing */
   max-width: 760px; /* Set the maximum width for three boxes in a row */
 }
 
