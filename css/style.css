@@ -67,17 +67,16 @@ a, a:hover, a:active {
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: auto; /* Set height to auto for relative height */
   margin: 0;
   padding: 0;
 }
 
 .box {
-  width: 250px;
-  min-height: 260px !important; /* Set a minimum height of 60px */
-  margin: 5px 5px 20px 5px; /* Adjust margin for spacing, add 20px bottom margin */
+  width: calc(33.33% - 20px); /* 25% for 4 boxes in a row, subtracting margins */
+  min-height: 160px !important;
+  margin: 5px;
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -87,6 +86,7 @@ a, a:hover, a:active {
   overflow: hidden;
   padding: 0;
 }
+
 
 .box:hover {
   background-color: #FF6666;
