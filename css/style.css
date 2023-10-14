@@ -65,7 +65,7 @@ a, a:hover, a:active {
 
 
 .box-container {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
