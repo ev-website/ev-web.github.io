@@ -67,18 +67,17 @@ a, a:hover, a:active {
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Horizontally center-align the boxes */
-  align-items: center; /* Vertically center-align the boxes */
-  margin: 2% 30% 2% 30%; /* Add a left margin of 30% */
-  padding: 10px !important; /* Add padding for spacing */
-  max-width: 760px; /* Set the maximum width for three boxes in a row */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px; /* Add padding for spacing */
+  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
 }
 
 .box {
-  width: calc(33.33% - 20px); /* 33.33% for 3 boxes in a row, minus margins */
-  min-height: 160px !important;
-  max-width: 220px !important;
-  margin: auto; /* Center-align horizontally and vertically */
+  width: calc(33.33% - 20px); /* 25% for 4 boxes in a row, minus margins */
+  min-height: 60px !important;
+  margin: 10px; /* Margin for spacing */
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -88,9 +87,6 @@ a, a:hover, a:active {
   overflow: hidden;
   padding: 0;
 }
-
-
-
 
 .box:hover {
   background-color: #FF6666;
