@@ -12,12 +12,6 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-1.11.0.min.js"></script>
-	
-    <!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-    <![endif]-->
 </head>
 <style>
  .service-box{margin-top:15px;margin-bottom:15px}.service-box .service-icon{float:left;margin-top:5px}.service-box .service-content{display: flex;  flex-direction: column; align-items: flex-start; margin-left: 7px; padding-left:48px}.service-box .service-content h4{font-size:18px;margin-bottom:10px;font-weight:700;transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out}.service-box .service-content h4 a{color:#444}.service-box .service-content h4 a:hover{color:#EB586F}
@@ -100,15 +94,50 @@ ul.social-icons li {
     .social-icons a:hover {
       text-decoration: underline;
     }
-
-</style>
-	
-<style>
-   body {
+     body {
      font-family: system-ui;
 }
+     .success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.team_box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.team_box img {
+  max-width: 100%;
+  height: 100%;
+  transition: opacity 0.8s;
+}
+
+
+
+/* Apply a dark gray filter to the image on hover */
+.team_box:hover img {
+  opacity: 0.3; /* Adjust the opacity value as needed */
+}
+
+
+.carousel-inner .item img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+}
+	  
+.footer_bottom {
+    padding-top: 5px; /* You can adjust the value (e.g., 20px) to increase or decrease the padding as needed */
+  }
 </style>
-	
+
+<!--Title Heading -->	
 <div class="moving-text-container" style="text-align: center;">
   <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" class="moving-text">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a>
 </div>
@@ -136,13 +165,12 @@ ul.social-icons li {
         <li><a href="#contact" class="scroll-link">Contact Us</a></li>
     </ul>
 </div>
-
-
             </nav>
         </div>
     </div>
 </header>
 
+<!--Carousel -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -229,11 +257,8 @@ ul.social-icons li {
     </a>
 </div>
 
-<!-- Rest of your HTML content goes here -->
-
-<!-- Include Bootstrap and jQuery scripts at the end of your HTML page -->
-
-<section id="aboutUs"><!--Aboutus-->
+<!--Aboutus-->
+<section id="aboutUs">
   <div class="inner_wrapper">
     <div class="container">
       <h2>About</h2>
@@ -249,12 +274,12 @@ ul.social-icons li {
 </section>
 <!--Aboutus-->
 
-
+<!--Research Areas-->
 <section  id="research">
 <div class="container">
 	<h2>Research Areas</h2>
 	<div class="row">
-              <!-- Start Service Icon 1 -->
+              <!-- Start Research Area 1 -->
               <div class="col-md-4 col-sm-6">
                 <div class="service-box">
                   <div class="service-icon">
@@ -268,9 +293,9 @@ ul.social-icons li {
                   </div>
                 </div>
               </div>
-              <!-- End Service Icon 1 -->
+              <!-- End Research Area 1 -->
 
-              <!-- Start Service Icon 2 -->
+              <!-- Start Research Area 2 -->
               <div class="col-md-4 col-sm-6">
                 <div class="service-box">
                   <div class="service-icon">
@@ -284,9 +309,9 @@ ul.social-icons li {
                   </div>
                 </div>
               </div>
-              <!-- End Service Icon 2 -->
+              <!-- End Research Area 2 -->
 
-              <!-- Start Service Icon 3 -->
+              <!-- Start Research Area 3 -->
               <div class="col-md-4 col-sm-6">
                 <div class="service-box">
                   <div class="service-icon">
@@ -300,9 +325,9 @@ ul.social-icons li {
                   </div>
                 </div>
               </div>
-              <!-- End Service Icon 3 -->
+              <!-- End Research Area 3 -->
 
-              <!-- Start Service Icon 4 -->
+              <!-- Start Research Area 4 -->
               <div class="col-md-4 col-sm-6">
                 <div class="service-box">
                   <div class="service-icon">
@@ -316,9 +341,9 @@ ul.social-icons li {
                   </div>
                 </div>
               </div>
-              <!-- End Service Icon 4 -->
+              <!-- End Research Area 4 -->
 
-              <!-- Start Service Icon 5 -->
+              <!-- Start Research Area 5 -->
               <div class="col-md-4 col-sm-6">
                 <div class="service-box">
                   <div class="service-icon">
@@ -332,9 +357,9 @@ ul.social-icons li {
                   </div>
                 </div>
               </div>
-              <!-- End Service Icon 5 -->
+              <!-- End Research Area 5 -->
               
-              <!-- Start Service Icon 6 -->
+              <!-- Start Research Area 6 -->
               <div class="col-md-4 col-sm-6">
                 <div class="service-box">
                   <div class="service-icon">
@@ -348,10 +373,11 @@ ul.social-icons li {
                   </div>
                 </div>
               </div>
-              <!-- End Service Icon 6 -->
+              <!-- End Research Arean 6 -->
 </div>
 </section>
 
+<!--Datasets-->
 <section id="dataset" class="content"> 
   <div class="container portfolio_title"> 
     <div class="section-title">
@@ -398,7 +424,7 @@ ul.social-icons li {
 <div class="box github-box github">
     <a href="#github-link2" class="box-link">
       <div class="box-content">
-        <h3>Github 2</h3>
+        <h3>Github 3</h3>
       </div>
     </a>
   </div>
@@ -406,7 +432,7 @@ ul.social-icons li {
 <div class="box github-box github">
     <a href="#github-link2" class="box-link">
       <div class="box-content">
-        <h3>Github 2</h3>
+        <h3>Github 4</h3>
       </div>
     </a>
   </div>
@@ -414,7 +440,7 @@ ul.social-icons li {
 <div class="box github-box github">
     <a href="#github-link2" class="box-link">
       <div class="box-content">
-        <h3>Github 2</h3>
+        <h3>Github 5</h3>
       </div>
     </a>
   </div>
@@ -422,7 +448,7 @@ ul.social-icons li {
 <div class="box github-box github">
     <a href="#github-link2" class="box-link">
       <div class="box-content">
-        <h3>Github 2</h3>
+        <h3>Github 6</h3>
       </div>
     </a>
   </div>
@@ -442,14 +468,14 @@ ul.social-icons li {
     </a>
   </div>
 </div>
-
 </section>
 	
 <!-- Team Area Start -->
-<section class="page_section team" id="team"><!--main-section team-start-->
+<section class="page_section team" id="team">
   <div class="container">
     <h2>Team Members</h2>
-    <div class="team_section clearfix">  
+    <div class="team_section clearfix"> 
+      <!--Team Member 1-->
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-03s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -464,6 +490,7 @@ ul.social-icons li {
         <span class="wow fadeInDown delay-03s">Dynamics</span>
       </div>
 	    
+      <!--Team Member 2-->    
       <div class="team_area">
         <div class="team_box  wow fadeInDown delay-03s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -477,7 +504,8 @@ ul.social-icons li {
         <h3 class="wow fadeInDown delay-06s">Na Li</h3>
         <span class="wow fadeInDown delay-06s">Control</span>
       </div>
-	    
+
+     <!--Team Member 3-->
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-09s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -492,8 +520,11 @@ ul.social-icons li {
         <span class="wow fadeInDown delay-09s">State Estimation</span>
       </div>
     </div>
+	  
+    <!--Second Row--> 
     <div class="team_section clearfix">
-
+	    
+      <!--Team Member 4-->
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-03s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -508,6 +539,7 @@ ul.social-icons li {
         <span class="wow fadeInDown delay-03s">Sensors</span>
       </div>
 	    
+      <!--Team Member 5-->   
       <div class="team_area">
         <div class="team_box  wow fadeInDown delay-06s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -521,7 +553,8 @@ ul.social-icons li {
         <h3 class="wow fadeInDown delay-06s">Minjie Chen</h3>
         <span class="wow fadeInDown delay-06s">Power Electronics</span>
       </div>
-	    
+
+     <!--Team Member 6-->
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-09s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -545,6 +578,7 @@ ul.social-icons li {
   <div class="container">
     <h2>Advisory Board</h2>
     <div class="team_section clearfix">
+     <!--Member 1-->
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-03s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -558,6 +592,8 @@ ul.social-icons li {
         <h3 class="wow fadeInDown delay-03s">Vahan Gevorgian</h3>
         <span class="wow fadeInDown delay-03s">NREL</span>
       </div>
+
+      <!--Member 2-->
       <div class="team_area">
         <div class="team_box  wow fadeInDown delay-06s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -569,6 +605,8 @@ ul.social-icons li {
         <h3 class="wow fadeInDown delay-06s">Chris King</h3>
         <span class="wow fadeInDown delay-06s">Siemens</span>
       </div>
+
+      <!--Member 3-->
       <div class="team_area">
         <div class="team_box wow fadeInDown delay-09s">
           <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
@@ -587,7 +625,7 @@ ul.social-icons li {
 <!-- Team Area End -->
 	
 	
-<!--Footer-->
+<!--Contact Us-->
 <div class="footer_wrapper" id="contact">
 <div class="container">
   <section class="page_section contact" id="contact">
@@ -608,7 +646,7 @@ ul.social-icons li {
     <label for="message">Message</label>
     <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your Message" style="width: 100%;"></textarea>
   </div>
-  <!-- your other form fields go here -->
+  
   <button type="submit" class="btn btn-primary" style="width: 200px; margin-bottom: 20px;">Submit</button>
 </form>
     </div>
@@ -618,6 +656,34 @@ ul.social-icons li {
   <!-- The message will be displayed here -->
 </div>
 
+<!--Footer-->
+<footer class="footer_section">
+<div class="container">
+<div class="row">
+          <div class="col-lg-4> col-md-8 col-sm-12">
+	  </div>
+	  <div class="col-lg-4> col-md-8 col-sm-12">
+            <div class="contact_info">
+              <h4 class="contact-info-title" style="padding-top: 5px; padding-left: 0px;">Funding Agency</h4>
+              <div class="service-content">
+                <p style="color: black; padding-left: 0px;">
+                  We gratefully acknowledge the support from the National Science Foundation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft">
+            <div class="contact_info">
+              <figure>
+                <img src="img/nsf.svg" alt="" style="max-width: 70%; height: 80px; padding-left: 120px; padding-top: 5px;">
+              </figure>
+            </div>
+          </div>
+        </div>
+	</footer>
+    </section>
+  </div>
+<!--Script for Form-->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   // Get the form element
@@ -681,128 +747,7 @@ j(document).ready(function() {
   });
 });
 
-/*
-var j = jQuery.noConflict();
-j(document).ready(function () {
-  // Listen for click events on filter links within the specific section
-  j('#filters ul li a').click(function () {
-    // Get the data-filter attribute value
-    var filterValue = j(this).data('filter');
-
-    // Hide all dataset items within the specific section
-    j('.dataset-item').hide();
-
-    // Show dataset items with the selected category within the specific section
-    j('#dataset ' + filterValue).show();
-
-    // Remove the 'active' class from all filter links within the specific section
-    j('#filters ul li a').removeClass('active');
-
-    // Add the 'active' class to the clicked filter link
-    j(this).addClass('active');
-
-    return false; // Prevent the default link behavior
-  });
-});
-*/
 </script>
-
-<style>
-
-.success {
-  color: green;
-}
-
-.error {
-  color: red;
-}
-
-.team_box {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.team_box img {
-  max-width: 100%;
-  height: 100%;
-  transition: opacity 0.8s;
-}
-
-
-
-/* Apply a dark gray filter to the image on hover */
-.team_box:hover img {
-  opacity: 0.3; /* Adjust the opacity value as needed */
-}
-
-
-.carousel-inner .item img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-}
-
-</style>
-
-
-<!--	    
-    <div class="center-form">
-        <div class="col-lg-8">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" required style="width: 1100px;" placeholder="Enter your name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required style="width: 1100px;" placeholder="Enter your Email">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required style="width: 1100px;" placeholder="Enter your Message"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary" required style="width: 200px;">Submit</button>
-            </form>
-        </div>
-    </div> -->
-	    
-<style>
-  .footer_bottom {
-    padding-top: 5px; /* You can adjust the value (e.g., 20px) to increase or decrease the padding as needed */
-  }
-</style>
-
-<footer class="footer_section">
-<div class="container">
-<div class="row">
-          <div class="col-lg-4> col-md-8 col-sm-12">
-	  </div>
-	  <div class="col-lg-4> col-md-8 col-sm-12">
-            <div class="contact_info">
-              <h4 class="contact-info-title" style="padding-top: 5px; padding-left: 0px;">Funding Agency</h4>
-              <div class="service-content">
-                <p style="color: black; padding-left: 0px;">
-                  We gratefully acknowledge the support from the National Science Foundation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft">
-            <div class="contact_info">
-              <figure>
-                <img src="img/nsf.svg" alt="" style="max-width: 70%; height: 80px; padding-left: 120px; padding-top: 5px;">
-              </figure>
-            </div>
-          </div>
-        </div>
-	</footer>
-    </section>
-  </div>
-
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
