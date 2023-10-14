@@ -75,7 +75,7 @@ a, a:hover, a:active {
 }
 
 .box {
-  flex: 0 0 calc(33.33% - 20px); /* 33.33% for 3 boxes in a row, minus margins */
+  width: 200px; /* Set a specific width for the boxes */
   min-height: 60px !important;
   margin: 10px;
   background-color: #ccc;
@@ -88,6 +88,7 @@ a, a:hover, a:active {
   padding: 0;
   box-sizing: border-box; /* Ensure padding doesn't affect box size */
 }
+
 
 
 
