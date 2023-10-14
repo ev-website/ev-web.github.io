@@ -76,7 +76,7 @@ a, a:hover, a:active {
 
 .box {
   width: 250px;
-  min-height: 160px; /* Set a minimum height of 60px */
+  min-height: 150px; /* Set height to auto for relative height */
   margin: 5px 5px 20px 5px; /* Adjust margin for spacing, add 20px bottom margin */
   background-color: #ccc;
   display: flex;
@@ -87,8 +87,6 @@ a, a:hover, a:active {
   overflow: hidden;
   padding: 0;
 }
-
-
 
 .box:hover {
   background-color: #FF6666;
