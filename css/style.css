@@ -66,10 +66,10 @@ a, a:hover, a:active {
 
 .box-container {
   display: flex;
-  justify-content: center !important; /* Horizontally center-align the boxes */
   flex-wrap: wrap;
-  align-items: center !important;
-  margin: 0;
+  justify-content: center; /* Horizontally center-align the boxes */
+  align-items: center; /* Vertically center-align the boxes */
+  margin: 0 0 0 30%; /* Add a left margin of 30% */
   padding: 10px; /* Add padding for spacing */
   max-width: 760px; /* Set the maximum width for three boxes in a row */
 }
@@ -78,16 +78,17 @@ a, a:hover, a:active {
   width: calc(33.33% - 20px); /* 33.33% for 3 boxes in a row, minus margins */
   min-height: 160px !important;
   max-width: 220px !important;
-  margin: 10px; /* Margin for spacing */
+  margin: auto; /* Center-align horizontally and vertically */
   background-color: #ccc;
   display: flex;
-  justify-content: center !important;
-  align-items: center !important;
+  justify-content: center;
+  align-items: center;
   position: relative;
   transition: background-color 0.3s;
   overflow: hidden;
   padding: 0;
 }
+
 
 
 
