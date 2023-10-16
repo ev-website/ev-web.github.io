@@ -89,14 +89,6 @@ a, a:hover, a:active {
   display: block;
 }
 
-.github {
-  background-color: #ccc; / Light gray color /
-}
-
-.matlab {
-  background-color: #ccc; / Slightly darker light gray */
-}
-
 
 .box:hover {
   background-color: #FF6666;
@@ -119,7 +111,7 @@ a, a:hover, a:active {
 }
 
 .matlab {
-  background-color: lightblue; /* Light blue color */
+  background-color: lightgray; /* Light blue color */
 }
 
 
@@ -139,7 +131,7 @@ h2 {
     font-weight: normal;
     margin: 0px 0 10px 0;
     text-align: center;
-    text-transform: uppercase;
+   /* text-transform: uppercase; */
 }
 
 h3 {
