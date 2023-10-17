@@ -1676,7 +1676,7 @@ width: 99%;
 }
 }
 
-/* Blog 
+/* News 
 ---------------------*/
 .blog-grid {
   margin-top: 15px;
@@ -1689,7 +1689,7 @@ width: 99%;
 }
 .blog-grid .blog-img .date {
   position: absolute;
-  background: #ccc;
+  background: #3a3973;
   color: #ffffff;
   padding: 8px 15px;
   left: 0;
