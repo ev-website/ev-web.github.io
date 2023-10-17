@@ -156,7 +156,7 @@ p {
     margin: 0;
 }
 
-#aboutUs, #research, #dataset, #team, #industry, #contact {
+#aboutUs, #news, #research, #dataset, #team, #industry, #contact {
     padding-top: 20px;/* Adjust the value as needed */
     padding-bottom: 10px;
 }
