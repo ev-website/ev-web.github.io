@@ -46,7 +46,9 @@
     text-align: left;
     display: inline-block;
   }
-
+  .moving-text:hover {
+    animation-play-state: paused;
+    color: red !important;
   
 ul.social-icons li {
   display: flex;
@@ -683,7 +685,7 @@ ul.social-icons li {
               <div class="service-content">
                 <p style="color: black; padding-left: 0px;">
                   We gratefully acknowledge the support from the National Science Foundation.
-                 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" class="moving-text" style="text-decoration: none; color: black;">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a> </p>
+                 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2328241" target="_blank" class="moving-text" style="text-decoration: none; color: black;" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">ASCENT: From Sensors to Multiscale Digital Twin to Autonomous Operation of Resilient Electric Power Grids</a> </p>
             </div>
 	    </div>
           </div>
