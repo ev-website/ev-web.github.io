@@ -272,7 +272,7 @@ aboutUs {
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
-    color: #df0031;
+    /*color: #df0031;*/
     background-color: transparent;
 }
 
