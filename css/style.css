@@ -938,7 +938,8 @@ a.contact_btn:hover {
 }
  
 #aboutUs {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 /* Contact
