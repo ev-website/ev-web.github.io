@@ -181,6 +181,7 @@ aboutUs {
 
 .header_box {
     position: relative;
+    justify-content: center;
 }
 
 .logo {
