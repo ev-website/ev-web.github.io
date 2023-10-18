@@ -249,6 +249,7 @@ aboutUs {
 
 .navStyle ul li a:hover {
     /*color: #df0031;*/
+    color: ##000000;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
@@ -269,7 +270,8 @@ aboutUs {
     font-size: large;
 }
 
-.navStyle > li.active > a {
+.navStyle > li.active > a,
+.navStyle > li.active > a:hover{
     text-decoration: none;
     color: #df0031;
     background-color: transparent;
