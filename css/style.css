@@ -263,16 +263,15 @@ aboutUs {
     font-size: large;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-   /*color: #df0031;*/
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover , .navbar-inverse .navbar-nav > .active > a:focus {
+   /* color: #df0031; */
     background-color: transparent;
     font-size: large;
 }
 
-.navStyle > li.active > a,
-.navStyle > li.active > a:hover {
+.navStyle > li.active > a {
     text-decoration: none;
-    /*color: #df0031;*/
+    color: #df0031;
     background-color: transparent;
 }
 
