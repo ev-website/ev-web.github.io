@@ -253,18 +253,18 @@ aboutUs {
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #df0031;
+    /*color: #df0031;*/
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #df0031;
+    /*color: #df0031;*/
     background-color: transparent;
     font-size: large;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #df0031;
+   /*color: #df0031;*/
     background-color: transparent;
     font-size: large;
 }
