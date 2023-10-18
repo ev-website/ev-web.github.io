@@ -15,6 +15,7 @@ img {
 
 a, a:hover, a:active {
     outline: 0px !important;
+    color: #df0031;
 }
 .clear {
     clear: both;
