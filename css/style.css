@@ -248,7 +248,7 @@ aboutUs {
 }
 
 .navStyle ul li a:hover {
-    color: #df0031;
+    /*color: #df0031;*/
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
