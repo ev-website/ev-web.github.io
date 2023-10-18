@@ -872,7 +872,7 @@ a.contact_btn:hover {
     display: block;
     width: 265px;
     height: 100%;
-    border-bottom: 4px solid #df0031;
+    border-bottom: 0px solid #df0031;
 }
 
 .team_box:hover .team_box_shadow {
