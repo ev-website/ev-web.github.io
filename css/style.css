@@ -1,6 +1,14 @@
 
 @charset "utf-8";
 
+@media (max-width: 768px) {
+  /* Styles for screens 768px wide and narrower */
+  .box-container {
+    margin-left: 10px; /* Adjust this value as needed for smaller screens */
+    margin-right: 10px; /* Adjust this value as needed for smaller screens */
+  }
+}
+
 ul {
     list-style: none;
 }
