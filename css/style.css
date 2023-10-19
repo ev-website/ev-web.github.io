@@ -4,13 +4,13 @@
 @media (max-width: 768px) {
   /* Styles for screens 768px wide and narrower */
   .box-container {
-    margin: 10px; /* Adjust this value as needed for smaller screens */
+    margin: 5px; /* Adjust this value as needed for smaller screens */
   }
 
   .box {
-    max-width: 100%; /* Ensure boxes are no wider than the screen */
+    width: 100%; /* Allow boxes to take full width */
+    max-width: none; /* Remove the max-width to ensure they can expand fully */
     margin: 10px; /* Adjust this value as needed for smaller screens */
-    width: auto; /* Allow boxes to take full width */
   }
 }
 
