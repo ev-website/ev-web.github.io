@@ -6,6 +6,12 @@
   .box-container {
     margin: 10px; /* Adjust this value as needed for smaller screens */
   }
+
+  .box {
+    max-width: 100%; /* Ensure boxes are no wider than the screen */
+    margin: 10px; /* Adjust this value as needed for smaller screens */
+    width: auto; /* Allow boxes to take full width */
+  }
 }
 
 ul {
