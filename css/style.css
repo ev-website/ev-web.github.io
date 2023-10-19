@@ -26,6 +26,20 @@
   }
 }
 
+/* Default styles for screens wider than 768px */
+.team_section {
+  display: flex;
+  justify-content: space-between; /* Align the boxes with equal space in between */
+}
+
+/* Media query for screens 768px wide and narrower */
+@media (max-width: 768px) {
+  .team_section {
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center; /* Center align the boxes horizontally */
+  }
+}
+
 
 ul {
     list-style: none;
