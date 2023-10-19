@@ -1,18 +1,30 @@
 
 @charset "utf-8";
 
-@media (max-width: 768px) {
-  /* Styles for screens 768px wide and narrower */
-  .box-container {
-    margin: 5px; /* Adjust this value as needed for smaller screens */
-  }
+/* Default styles for screens wider than 768px */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-left: 170px;
+  margin-right: 170px;
+  padding: 0;
+}
 
+/* Styles for screens 768px wide and narrower */
+@media (max-width: 768px) {
+  .box-container {
+    margin: 10px; /* Adjust this value as needed for smaller screens */
+  }
   .box {
     width: 100%; /* Allow boxes to take full width */
-    max-width: none; /* Remove the max-width to ensure they can expand fully */
+    max-width: none; /* Remove the max-width property */
     margin: 10px; /* Adjust this value as needed for smaller screens */
   }
 }
+
 
 ul {
     list-style: none;
