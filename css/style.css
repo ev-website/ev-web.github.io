@@ -433,12 +433,23 @@ a.read_more2:hover {
         opacity: 1; /* Set full opacity for the active indicator */
     }	
 
-
+/*
 .carousel-caption.h3 {
 	top: 50%;
 transform: translateY(-50%);
 	bottom: initial;
+}*/
+
+.carousel-caption.h3 {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  left: 0; /* Center the caption horizontally */
+  right: 0; /* Center the caption horizontally */
+  text-align: center; /* Center the text within the caption */
+  width: 100%; /* Make the caption span the full width of its container */
 }
+
 
 
 /* Services
