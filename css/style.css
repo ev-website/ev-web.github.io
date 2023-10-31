@@ -1837,10 +1837,12 @@ width: 99%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; /* Center vertically */
 }
 
 .team_area {
   margin: 20px;
+  text-align: left; /* Adjust text alignment as needed */
   flex: 1;
   max-width: 300px; /* Adjust the max-width as needed */
 }
@@ -1851,4 +1853,3 @@ width: 99%;
     max-width: 100%; /* Expand to full width on smaller screens */
   }
 }
-
