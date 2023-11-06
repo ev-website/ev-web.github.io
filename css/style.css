@@ -1,6 +1,12 @@
 
 @charset "utf-8";
 
+@media (max-width: 768px) {
+  .inner_wrapper {
+    margin: 0 10px; /* Adjust the margin values as per your design preferences */
+  }
+}
+
 /* Default styles for screens wider than 768px */
 .box-container {
   display: flex;
