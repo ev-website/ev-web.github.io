@@ -8,24 +8,11 @@
   }
 }
 @media (max-width: 768px) {
-  #main-nav {
-    display: none; /* Hide the regular navigation menu */
-  }
-  #nav-toggle {
-    display: block; /* Display the toggle button */
-  }
-  .navbar-nav {
-    flex-direction: column; /* Stack menu items vertically */
-    text-align: center; /* Center-align menu items */
-  }
-  .navbar-nav li {
-    padding: 10px 0; /* Add padding to menu items for spacing */
-  }
-  .navbar-collapse.in {
-    display: block !important; /* Ensure the menu is displayed when the toggle button is clicked */
+  .navbar {
+    padding: 10px; /* Adjust the padding values to control the size */
+    /* You can also adjust other styles as needed to make it responsive */
   }
 }
-
 /* Default styles for screens wider than 768px */
 .box-container {
   display: flex;
