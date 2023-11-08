@@ -9,9 +9,13 @@
 }
 
 @media (max-width: 768px) {
-  .carousel-caption {
-    font-size: 16px; /* Adjust the margin values as per your design preferences */
-  }
+    .carousel-caption {
+        top: 15%; /* Adjust as needed for smaller screens */
+        font-size: 16px; /* Adjust the font size */
+    }
+    .carousel-caption h3 {
+        font-size: 24px; /* Adjust the heading font size */
+    }
 }
 /* Default styles for screens wider than 768px */
 .box-container {
