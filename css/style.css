@@ -7,26 +7,10 @@
     margin: 0 15px; /* Adjust the margin values as per your design preferences */
   }
 }
+
 @media (max-width: 768px) {
-  .navbar {
-    padding: 10px; /* Adjust the padding values to control the size */
-    /* You can also adjust other styles as needed to make it responsive */
-  }
-  
-  .navbar-header {
-    text-align: center;
-  }
-
-  .navbar-toggle {
-    text-align: center;
-  }
-
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .navbar-nav > li {
-    font-size: 16px; /* Adjust the font size as needed */
+  .carousel-caption {
+    font-size: 16px; /* Adjust the margin values as per your design preferences */
   }
 }
 /* Default styles for screens wider than 768px */
