@@ -36,6 +36,12 @@
         font-size: 20px;
 	color: white;
     }
+
+   .carousel-caption h3 {
+        white-space: normal; /* Allow text to wrap */
+        text-align: center;
+        padding: 0 15px; /* Add padding to prevent text from overflowing */
+    }
 }
 
 /* Default styles for screens wider than 768px */
